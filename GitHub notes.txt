@@ -1,0 +1,29 @@
+https://github.com/whelsey3/T3CodeBase.git
+
+Microsoft Windows [Version 10.0.17763.1339]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Projects\Development\TempClones\TTTstore>git remote add origin https://github
+.com/whelsey3/T3CodeBase.git
+fatal: remote origin already exists.
+
+C:\Projects\Development\TempClones\TTTstore>git push -u origin master
+To https://tdtsoftware99.visualstudio.com/TTTstore/_git/TTTstore
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://tdtsoftware99.visualstudio.com/TTTst
+ore/_git/TTTstore'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Projects\Development\TempClones\TTTstore>git remote add origin https://github
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/whelsey3/TDTCodeBase.git
+git push -u origin master
+
+https://github.com/whelsey3/TDTCodeBase/branches 
+

@@ -1,0 +1,2859 @@
+ Volume in drive C is Windows
+ Volume Serial Number is D2B8-5833
+
+ Directory of C:\Projects\Working\TDT0325
+
+06/25/2018  03:11 PM    <DIR>          .
+06/25/2018  03:11 PM    <DIR>          ..
+03/25/2018  10:39 AM             2,581 .gitattributes
+03/25/2018  10:39 AM             4,565 .gitignore
+03/25/2018  10:39 AM             3,242 App - Copy.config
+06/04/2018  03:41 PM             4,236 App.config
+03/25/2018  10:39 AM             1,354 App.xaml
+04/19/2018  09:50 AM             8,172 App.xaml.cs
+03/25/2018  10:39 AM            65,536 BillWork.db
+06/01/2018  04:30 PM    <DIR>          bin
+03/25/2018  10:39 AM    <DIR>          Converters
+03/25/2018  10:39 AM             1,975 DatabaseContext.cs
+06/25/2018  03:11 PM                 0 dir.txt
+05/09/2018  08:58 AM               666 icons8-to-do-48.png
+03/25/2018  10:39 AM    <DIR>          Images
+03/25/2018  10:39 AM               505 MainWindow.xaml
+03/25/2018  10:39 AM               661 MainWindow.xaml.cs
+04/09/2018  11:12 AM    <DIR>          Messages
+03/25/2018  10:39 AM    <DIR>          Model
+05/10/2018  03:56 PM    <DIR>          obj
+03/25/2018  12:47 PM    <DIR>          packages
+03/25/2018  10:39 AM               882 packages.config
+06/04/2018  03:41 PM    <DIR>          Properties
+03/25/2018  10:39 AM    <DIR>          Reports
+03/25/2018  10:39 AM    <DIR>          Resources
+05/10/2018  10:04 AM             6,659 SetUpData.cs
+03/25/2018  10:39 AM               724 SQLiteConfiguration.cs
+03/25/2018  10:39 AM    <DIR>          Support
+03/25/2018  10:39 AM    <DIR>          SupportFiles
+05/07/2018  09:44 AM            53,248 TDTDb.sqlite
+03/25/2018  10:39 AM            45,056 TDTDb0325b.sqlite
+05/10/2018  09:13 AM             7,358 toDo.ico
+03/25/2018  10:39 AM            13,430 TODOTODAY.ICO
+05/01/2018  11:15 AM             3,293 TODOTODAY.png
+05/30/2018  04:12 PM             4,996 ToDoTodayNew.sln
+06/04/2018  03:54 PM            22,746 ToDoTodayNoCF.csproj
+04/22/2018  12:39 PM               627 ToDoTodayNoCF.csproj.user
+03/25/2018  10:39 AM             1,676 ToDoToday_TemporaryKey.pfx
+04/30/2018  08:56 AM             3,227 undoChanges.cs
+05/22/2018  03:37 PM            33,222 UpgradeLog.htm
+03/25/2018  10:39 AM             2,589 Util.cs
+03/25/2018  10:39 AM    <DIR>          ViewModel
+03/25/2018  10:39 AM    <DIR>          Views
+03/25/2018  10:39 AM    <DIR>          x64
+03/25/2018  10:39 AM    <DIR>          x86
+              27 File(s)        293,226 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git
+
+05/25/2018  08:47 AM                30 COMMIT_EDITMSG
+04/20/2018  10:46 AM               382 config
+03/25/2018  10:39 AM                73 description
+05/25/2018  08:47 AM               376 FETCH_HEAD
+03/25/2018  04:05 PM                25 HEAD
+03/25/2018  10:39 AM    <DIR>          hooks
+05/25/2018  08:47 AM            16,357 index
+03/25/2018  10:39 AM    <DIR>          info
+03/25/2018  10:39 AM    <DIR>          logs
+06/25/2018  10:12 AM               150 ms-persist.xml
+05/25/2018  08:47 AM    <DIR>          objects
+05/25/2018  08:47 AM                41 ORIG_HEAD
+03/25/2018  10:39 AM               178 packed-refs
+03/25/2018  10:39 AM    <DIR>          refs
+               9 File(s)         17,612 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\hooks
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM               478 applypatch-msg.sample
+03/25/2018  10:39 AM               896 commit-msg.sample
+03/25/2018  10:39 AM               189 post-update.sample
+03/25/2018  10:39 AM               424 pre-applypatch.sample
+03/25/2018  10:39 AM             1,642 pre-commit.sample
+03/25/2018  10:39 AM             1,348 pre-push.sample
+03/25/2018  10:39 AM             4,951 pre-rebase.sample
+03/25/2018  10:39 AM               544 pre-receive.sample
+03/25/2018  10:39 AM             1,239 prepare-commit-msg.sample
+03/25/2018  10:39 AM             3,610 update.sample
+              10 File(s)         15,321 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\info
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM               240 exclude
+               1 File(s)            240 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\logs
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+05/25/2018  08:47 AM             1,971 HEAD
+03/25/2018  10:39 AM    <DIR>          refs
+               1 File(s)          1,971 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\logs\refs
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  04:05 PM    <DIR>          heads
+03/25/2018  10:39 AM    <DIR>          remotes
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\logs\refs\heads
+
+03/25/2018  04:05 PM    <DIR>          .
+03/25/2018  04:05 PM    <DIR>          ..
+05/25/2018  08:47 AM             1,328 dbAdjust
+03/25/2018  01:39 PM               664 master
+               2 File(s)          1,992 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\logs\refs\remotes
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+04/20/2018  10:46 AM    <DIR>          origin
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\logs\refs\remotes\origin
+
+04/20/2018  10:46 AM    <DIR>          .
+04/20/2018  10:46 AM    <DIR>          ..
+05/25/2018  08:48 AM               948 dbAdjust
+03/25/2018  10:39 AM               209 HEAD
+03/25/2018  01:39 PM               392 master
+               3 File(s)          1,549 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects
+
+05/25/2018  08:47 AM    <DIR>          .
+05/25/2018  08:47 AM    <DIR>          ..
+04/20/2018  10:44 AM    <DIR>          00
+05/10/2018  01:07 PM    <DIR>          01
+05/10/2018  01:07 PM    <DIR>          04
+04/20/2018  10:44 AM    <DIR>          06
+03/25/2018  01:38 PM    <DIR>          0b
+04/26/2018  11:44 AM    <DIR>          0e
+04/26/2018  11:44 AM    <DIR>          13
+05/25/2018  08:47 AM    <DIR>          16
+05/21/2018  09:12 AM    <DIR>          19
+05/10/2018  01:08 PM    <DIR>          1d
+04/20/2018  10:44 AM    <DIR>          24
+04/20/2018  10:44 AM    <DIR>          2a
+05/07/2018  10:15 AM    <DIR>          2f
+05/07/2018  10:15 AM    <DIR>          31
+04/26/2018  11:44 AM    <DIR>          34
+05/07/2018  10:15 AM    <DIR>          35
+04/20/2018  10:44 AM    <DIR>          37
+05/07/2018  10:15 AM    <DIR>          3d
+04/20/2018  10:44 AM    <DIR>          3f
+04/20/2018  10:44 AM    <DIR>          46
+05/07/2018  10:15 AM    <DIR>          47
+04/20/2018  10:44 AM    <DIR>          48
+05/25/2018  08:47 AM    <DIR>          49
+05/10/2018  01:07 PM    <DIR>          4f
+05/10/2018  01:07 PM    <DIR>          51
+04/20/2018  10:44 AM    <DIR>          52
+05/10/2018  01:07 PM    <DIR>          53
+05/07/2018  10:15 AM    <DIR>          5c
+04/20/2018  10:44 AM    <DIR>          5d
+05/21/2018  09:12 AM    <DIR>          63
+04/20/2018  10:44 AM    <DIR>          66
+04/20/2018  10:44 AM    <DIR>          6c
+03/25/2018  01:38 PM    <DIR>          7d
+05/07/2018  10:15 AM    <DIR>          7e
+04/20/2018  10:44 AM    <DIR>          81
+04/20/2018  10:44 AM    <DIR>          82
+03/25/2018  01:39 PM    <DIR>          86
+05/10/2018  01:07 PM    <DIR>          88
+05/07/2018  10:15 AM    <DIR>          8a
+04/26/2018  11:44 AM    <DIR>          8e
+05/07/2018  10:15 AM    <DIR>          91
+04/20/2018  10:44 AM    <DIR>          94
+05/21/2018  09:12 AM    <DIR>          97
+05/07/2018  10:15 AM    <DIR>          99
+04/20/2018  10:44 AM    <DIR>          9b
+03/25/2018  01:39 PM    <DIR>          9c
+04/20/2018  10:44 AM    <DIR>          a1
+04/20/2018  10:44 AM    <DIR>          a2
+04/26/2018  11:44 AM    <DIR>          a8
+03/25/2018  01:38 PM    <DIR>          aa
+05/07/2018  10:15 AM    <DIR>          ad
+04/20/2018  10:44 AM    <DIR>          b0
+04/20/2018  10:44 AM    <DIR>          b1
+03/25/2018  01:38 PM    <DIR>          b4
+05/10/2018  01:07 PM    <DIR>          b5
+04/20/2018  10:44 AM    <DIR>          b8
+05/21/2018  09:12 AM    <DIR>          c0
+05/07/2018  10:15 AM    <DIR>          c6
+04/20/2018  10:44 AM    <DIR>          c8
+04/20/2018  10:44 AM    <DIR>          d0
+04/20/2018  10:44 AM    <DIR>          d1
+04/26/2018  11:44 AM    <DIR>          d6
+04/20/2018  10:44 AM    <DIR>          d9
+05/21/2018  09:12 AM    <DIR>          db
+05/10/2018  01:07 PM    <DIR>          dd
+05/07/2018  10:15 AM    <DIR>          e5
+05/10/2018  01:07 PM    <DIR>          e6
+05/10/2018  01:07 PM    <DIR>          e9
+03/25/2018  01:39 PM    <DIR>          ed
+04/20/2018  10:44 AM    <DIR>          f2
+04/20/2018  10:44 AM    <DIR>          fd
+04/20/2018  10:44 AM    <DIR>          ff
+03/25/2018  10:39 AM    <DIR>          info
+03/25/2018  10:39 AM    <DIR>          pack
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\00
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               308 eeb89e62b9a9a71f45d2d395363928421a38c5
+               1 File(s)            308 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\01
+
+05/10/2018  01:07 PM    <DIR>          .
+05/10/2018  01:07 PM    <DIR>          ..
+05/10/2018  01:07 PM               117 ae36b09f866e6d3e96db3b6e86ee3a2a10f7e7
+               1 File(s)            117 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\04
+
+05/10/2018  01:07 PM    <DIR>          .
+05/10/2018  01:07 PM    <DIR>          ..
+05/10/2018  01:07 PM               307 9397836da14903debe3dea336ab816807f6209
+               1 File(s)            307 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\06
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               146 2f6091ede2bd8ef2a3436a3f41420b1d9e56cf
+               1 File(s)            146 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\0b
+
+03/25/2018  01:38 PM    <DIR>          .
+03/25/2018  01:38 PM    <DIR>          ..
+03/25/2018  01:38 PM             2,272 1f34ee9131263d1e7ee3047d55d920eb91301f
+03/25/2018  01:39 PM               308 204cd0e70fd91e5909dff6d91f68d19470981b
+               2 File(s)          2,580 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\0e
+
+04/26/2018  11:44 AM    <DIR>          .
+04/26/2018  11:44 AM    <DIR>          ..
+04/26/2018  11:44 AM               308 7ceae1d5140714dafb1b0d5ae68058bdf0e4d3
+               1 File(s)            308 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\13
+
+04/26/2018  11:44 AM    <DIR>          .
+04/26/2018  11:44 AM    <DIR>          ..
+04/26/2018  11:44 AM               118 c10f682dd6d59471047deb570dbb8de66d6335
+               1 File(s)            118 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\16
+
+05/25/2018  08:47 AM    <DIR>          .
+05/25/2018  08:47 AM    <DIR>          ..
+05/25/2018  08:47 AM             1,218 b4b05bc5c1d52bce9f26c9ceae5879269d4f5c
+               1 File(s)          1,218 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\19
+
+05/21/2018  09:12 AM    <DIR>          .
+05/21/2018  09:12 AM    <DIR>          ..
+03/25/2018  01:39 PM               227 2e3124c92c319018ba22de894b9cceb60f70c3
+05/07/2018  10:15 AM             1,024 44c285704588e7da33b15a24976724c9db3966
+05/21/2018  09:12 AM             1,024 d00d3c07c30f68786d004fd184c69accba69e9
+               3 File(s)          2,275 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\1d
+
+05/10/2018  01:08 PM    <DIR>          .
+05/10/2018  01:08 PM    <DIR>          ..
+05/10/2018  01:08 PM               206 5846f820c573341204e7e55cb0203c4afc2723
+               1 File(s)            206 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\24
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM             1,003 d65d7e22ee1a104faece29c7eed3ff506093b5
+               1 File(s)          1,003 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\2a
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM             7,514 16e05455a9a248a8cb065896ab9c534d9161b1
+04/20/2018  10:44 AM            12,958 a6e3df19a88e93da7a06937c82b330104fe975
+               2 File(s)         20,472 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\2f
+
+05/07/2018  10:15 AM    <DIR>          .
+05/07/2018  10:15 AM    <DIR>          ..
+04/20/2018  10:44 AM             2,269 47498d86b7b2800be60a712d0548248eac66f7
+05/07/2018  10:15 AM               194 8e3dd57863a3963e60aa6f152cc87c4595b9ef
+               2 File(s)          2,463 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\31
+
+05/07/2018  10:15 AM    <DIR>          .
+05/07/2018  10:15 AM    <DIR>          ..
+05/07/2018  10:15 AM            13,061 8780bfb3afe170bb5f1739499852dd50ad94d2
+04/20/2018  10:44 AM             1,023 ecacf7c048efd40507b108b582e0fac0fb34c5
+               2 File(s)         14,084 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\34
+
+04/26/2018  11:44 AM    <DIR>          .
+04/26/2018  11:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               118 3247fc6bcf6ad9c5485944aee8395493ff6d59
+04/26/2018  11:44 AM             4,435 a2b14e7171d37b4ed63a152cd81dee9fa65aa7
+               2 File(s)          4,553 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\35
+
+05/07/2018  10:15 AM    <DIR>          .
+05/07/2018  10:15 AM    <DIR>          ..
+05/07/2018  10:15 AM             1,245 8b917b34a45677e8fc233b98de163b3ba93f77
+               1 File(s)          1,245 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\37
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM             2,228 bfe37b6078f06b502200a0cf88a408a6693011
+               1 File(s)          2,228 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\3d
+
+05/07/2018  10:15 AM    <DIR>          .
+05/07/2018  10:15 AM    <DIR>          ..
+05/07/2018  10:15 AM             1,834 58431c997ad56860fc02b24abaa3a5b0308807
+               1 File(s)          1,834 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\3f
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               187 8d424614a4d6e1feec29c0dae61b8a5e3ccd9d
+               1 File(s)            187 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\46
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+03/25/2018  01:38 PM               200 225258a1e67cc51fdbe22437695384ce3620ec
+04/20/2018  10:44 AM             1,066 6acd6313fcf6641792f5e265e3f4acd9027e41
+               2 File(s)          1,266 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\47
+
+05/07/2018  10:15 AM    <DIR>          .
+05/07/2018  10:15 AM    <DIR>          ..
+05/07/2018  10:15 AM             7,495 3fba869cfbb71d962c8b3578c8e1d6c8fa4fa3
+               1 File(s)          7,495 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\48
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM             5,053 f460a9bbdb445ed431faa7f2372ad1b1a0b3ab
+               1 File(s)          5,053 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\49
+
+05/25/2018  08:47 AM    <DIR>          .
+05/25/2018  08:47 AM    <DIR>          ..
+05/25/2018  08:47 AM               186 2b52dd7aa0a9593dd70d24cdcddc6e4fc9341b
+               1 File(s)            186 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\4f
+
+05/10/2018  01:07 PM    <DIR>          .
+05/10/2018  01:07 PM    <DIR>          ..
+05/10/2018  01:07 PM               574 6db6f6d26dceaa3034202a2037ea131907704e
+               1 File(s)            574 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\51
+
+05/10/2018  01:07 PM    <DIR>          .
+05/10/2018  01:07 PM    <DIR>          ..
+05/10/2018  01:07 PM             1,024 824b57efaeb7266d1564f9a36cf8021623868e
+               1 File(s)          1,024 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\52
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               940 7501ddeea4d85028353762e8f6e2ca44b43c95
+               1 File(s)            940 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\53
+
+05/10/2018  01:07 PM    <DIR>          .
+05/10/2018  01:07 PM    <DIR>          ..
+05/10/2018  01:07 PM             1,882 25fab2dea37abe6751a08815be2056ca76f812
+               1 File(s)          1,882 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\5c
+
+05/07/2018  10:15 AM    <DIR>          .
+05/07/2018  10:15 AM    <DIR>          ..
+05/07/2018  10:15 AM             1,146 cfcda24acfa321e17c7e92d7908f1a7554bec3
+               1 File(s)          1,146 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\5d
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               428 08493c7c1e85d1784c7afdf93cacad92a9f5b9
+               1 File(s)            428 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\63
+
+05/21/2018  09:12 AM    <DIR>          .
+05/21/2018  09:12 AM    <DIR>          ..
+05/21/2018  09:12 AM               227 40bfad093f949b30d7b68a8eac876a78e1c576
+               1 File(s)            227 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\66
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               276 9308ec28a17174cd7c9f856ed47946d4dfc21f
+               1 File(s)            276 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\6c
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM             1,086 4cd5249ca7212119fabd47a413a67b257dd5ab
+               1 File(s)          1,086 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\7d
+
+03/25/2018  01:38 PM    <DIR>          .
+03/25/2018  01:38 PM    <DIR>          ..
+03/25/2018  01:38 PM             2,404 19713c6dd15a7e96cfbdf857121d062b74bae5
+               1 File(s)          2,404 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\7e
+
+05/07/2018  10:15 AM    <DIR>          .
+05/07/2018  10:15 AM    <DIR>          ..
+05/07/2018  10:15 AM               673 6773d3a1032c6a84809dc920e262571d9e8d83
+04/20/2018  10:44 AM               195 a852cd512c19f1a1264cfe983409d1bc513edd
+               2 File(s)            868 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\81
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               215 4b0048bc2f6a6a87e0df581ef637da30ed110e
+               1 File(s)            215 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\82
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               836 702f5ad08abec05f80488c58b42dc5470a7b41
+               1 File(s)            836 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\86
+
+03/25/2018  01:39 PM    <DIR>          .
+03/25/2018  01:39 PM    <DIR>          ..
+03/25/2018  01:39 PM               252 07e86a27a623f4d37e00c4d7fd1aa85cae3099
+               1 File(s)            252 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\88
+
+05/10/2018  01:07 PM    <DIR>          .
+05/10/2018  01:07 PM    <DIR>          ..
+05/10/2018  01:07 PM             1,218 09d35837f1cdfe25f656f6b94a25457bf4768a
+               1 File(s)          1,218 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\8a
+
+05/07/2018  10:15 AM    <DIR>          .
+05/07/2018  10:15 AM    <DIR>          ..
+05/07/2018  10:15 AM               307 e59dac961c05dcdb44e46f63c02d82c7d46a7c
+               1 File(s)            307 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\8e
+
+04/26/2018  11:44 AM    <DIR>          .
+04/26/2018  11:44 AM    <DIR>          ..
+04/26/2018  11:44 AM             1,024 0d2eed10e261a5809108568fe6d94814546bd1
+04/20/2018  10:44 AM               362 ad7f256cc86fb75a897c13f5ef7ee2a2a63d7b
+               2 File(s)          1,386 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\91
+
+05/07/2018  10:15 AM    <DIR>          .
+05/07/2018  10:15 AM    <DIR>          ..
+05/07/2018  10:15 AM             2,311 7199db2bf3791d91687f65a406271f81d89d7a
+               1 File(s)          2,311 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\94
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM             2,402 3f45d08c8a5545950c0891ebee162b93f5a079
+04/20/2018  10:44 AM             4,422 874a793835e547c06f2e54cf3c22ac8ebc0a7f
+               2 File(s)          6,824 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\97
+
+05/21/2018  09:12 AM    <DIR>          .
+05/21/2018  09:12 AM    <DIR>          ..
+04/26/2018  11:44 AM             1,086 02f1a45c5ca2e227774640d6f425a3c893c4ca
+05/21/2018  09:12 AM               184 e665ad93f4d8876cc9a9390971bfdc39741b11
+               2 File(s)          1,270 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\99
+
+05/07/2018  10:15 AM    <DIR>          .
+05/07/2018  10:15 AM    <DIR>          ..
+05/07/2018  10:15 AM             3,079 28a66f2b2a45aa41181ecc7ba2ebb454cfcf37
+04/20/2018  10:44 AM             3,339 82f2f52262b5234f907880e5197858e88224ee
+               2 File(s)          6,418 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\9b
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM             2,352 e33490ab92ef5cfcf236fcee8b82def6f9aa9b
+               1 File(s)          2,352 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\9c
+
+03/25/2018  01:39 PM    <DIR>          .
+03/25/2018  01:39 PM    <DIR>          ..
+03/25/2018  01:39 PM             1,058 779897bb7235a0157003117243726051dc9e25
+03/25/2018  01:39 PM               215 857649e619ceca9630ba2dd57ad8866e22eb80
+               2 File(s)          1,273 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\a1
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               673 574246314e4f9be3410b6dc4419bf4fd1bba13
+04/20/2018  10:44 AM             1,056 92e95dcfd9f7bd5338bf0004deeb954b14ee2e
+               2 File(s)          1,729 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\a2
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               634 c29b9fed1237abf7b06d0834315a5ad8564291
+               1 File(s)            634 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\a8
+
+04/26/2018  11:44 AM    <DIR>          .
+04/26/2018  11:44 AM    <DIR>          ..
+04/26/2018  11:44 AM               181 f6ce4fe332a2b75455ee6afd2653a0891ad441
+               1 File(s)            181 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\aa
+
+03/25/2018  01:38 PM    <DIR>          .
+03/25/2018  01:38 PM    <DIR>          ..
+03/25/2018  01:39 PM             1,024 269b2de29d9f49360a2fb31fa3c60a04cbebdb
+               1 File(s)          1,024 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\ad
+
+05/07/2018  10:15 AM    <DIR>          .
+05/07/2018  10:15 AM    <DIR>          ..
+05/07/2018  10:15 AM               195 687421dd9dbb7bc46c9d6562665308568f3c48
+               1 File(s)            195 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\b0
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM             4,435 18fafae9fe2541bb8f9f0e49629521d438edb9
+               1 File(s)          4,435 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\b1
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               544 6ca38a2ee02484a6bb2b531d4880b57dcb9633
+               1 File(s)            544 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\b4
+
+03/25/2018  01:38 PM    <DIR>          .
+03/25/2018  01:38 PM    <DIR>          ..
+03/25/2018  01:39 PM             1,057 0bd51e11541531405b67f07747bb24ecd39299
+               1 File(s)          1,057 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\b5
+
+05/10/2018  01:07 PM    <DIR>          .
+05/10/2018  01:07 PM    <DIR>          ..
+05/10/2018  01:07 PM               227 1de6f719ee7b66d35dd3914c0cb1404eefad4d
+               1 File(s)            227 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\b8
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM             1,644 a7ef2925211e7a73e85c718ee0fda045bd070b
+               1 File(s)          1,644 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\c0
+
+05/21/2018  09:12 AM    <DIR>          .
+05/21/2018  09:12 AM    <DIR>          ..
+05/21/2018  09:12 AM             1,218 939030cbebd5a524e1a6198976770640e4a8df
+               1 File(s)          1,218 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\c6
+
+05/07/2018  10:15 AM    <DIR>          .
+05/07/2018  10:15 AM    <DIR>          ..
+05/07/2018  10:15 AM               227 6491af0813c1a7caa22980b39779b3b032b327
+               1 File(s)            227 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\c8
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM             7,493 98a2abc32edb5a79275b8388d9470a09d44ea3
+               1 File(s)          7,493 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\d0
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               346 39de83e0ce331fded4b0f381d115dbab9626df
+               1 File(s)            346 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\d1
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               582 9bce97ef28328dea05ac9086a3318f33cffb33
+               1 File(s)            582 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\d6
+
+04/26/2018  11:44 AM    <DIR>          .
+04/26/2018  11:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               157 c28ff6d1483a6fa0fc5af155a9411d14a53a1b
+04/26/2018  11:44 AM               227 ed4722161de6bc41dcad7b958a90c5accfce3f
+               2 File(s)            384 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\d9
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM             2,480 607a3a66b06a38facd17d14ad70d2bd569e89f
+               1 File(s)          2,480 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\db
+
+05/21/2018  09:12 AM    <DIR>          .
+05/21/2018  09:12 AM    <DIR>          ..
+05/21/2018  09:12 AM             4,581 740476e050d788c51bebef5684b979e663a592
+               1 File(s)          4,581 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\dd
+
+05/10/2018  01:07 PM    <DIR>          .
+05/10/2018  01:07 PM    <DIR>          ..
+05/10/2018  01:07 PM               679 aa4a8d1c1a45c7f67c19eea51505cae40e6bc2
+               1 File(s)            679 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\e5
+
+05/07/2018  10:15 AM    <DIR>          .
+05/07/2018  10:15 AM    <DIR>          ..
+05/07/2018  10:15 AM               744 c0cbe8c331c3dd990e42c8ba71927a1d38e450
+               1 File(s)            744 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\e6
+
+05/10/2018  01:07 PM    <DIR>          .
+05/10/2018  01:07 PM    <DIR>          ..
+05/10/2018  01:07 PM             2,355 247f49074fe361a4b6054a8ef29a9f9cf8009c
+               1 File(s)          2,355 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\e9
+
+05/10/2018  01:07 PM    <DIR>          .
+05/10/2018  01:07 PM    <DIR>          ..
+05/10/2018  01:07 PM             4,453 2923681c874f0f1ff0cb4281556897b40fe55e
+04/20/2018  10:44 AM            13,531 52abf51bcdbaecb0fcb191e5ef34389415de6b
+               2 File(s)         17,984 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\ed
+
+03/25/2018  01:39 PM    <DIR>          .
+03/25/2018  01:39 PM    <DIR>          ..
+03/25/2018  01:39 PM               196 844b3321d251a75dffcecf001c9658863fffe2
+               1 File(s)            196 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\f2
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               403 3f21ca6f7e4b06edc60550df8bca800c702bd0
+               1 File(s)            403 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\fd
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM             1,763 344e83bff01a1fc2219681cf3fe420e001b68c
+               1 File(s)          1,763 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\ff
+
+04/20/2018  10:44 AM    <DIR>          .
+04/20/2018  10:44 AM    <DIR>          ..
+04/20/2018  10:44 AM               227 87bf44bfe989ad63edb858a1d1b29cd8a073d4
+04/20/2018  10:44 AM               922 a1495c0a83f0f9a78e4a722a798272404bede1
+               2 File(s)          1,149 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\info
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\objects\pack
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM            10,424 pack-34bfbc59aa5d4328672d74bde1b191b3a454c2d2.idx
+05/25/2018  08:47 AM         1,725,248 pack-34bfbc59aa5d4328672d74bde1b191b3a454c2d2.pack
+               2 File(s)      1,735,672 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\refs
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+05/25/2018  08:47 AM    <DIR>          heads
+03/25/2018  10:39 AM    <DIR>          remotes
+03/25/2018  10:39 AM    <DIR>          tags
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\refs\heads
+
+05/25/2018  08:47 AM    <DIR>          .
+05/25/2018  08:47 AM    <DIR>          ..
+05/25/2018  08:47 AM                41 dbAdjust
+03/25/2018  01:39 PM                41 master
+               2 File(s)             82 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\refs\remotes
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+05/25/2018  08:48 AM    <DIR>          origin
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\refs\remotes\origin
+
+05/25/2018  08:48 AM    <DIR>          .
+05/25/2018  08:48 AM    <DIR>          ..
+05/25/2018  08:48 AM                41 dbAdjust
+03/25/2018  10:39 AM                32 HEAD
+03/25/2018  01:39 PM                41 master
+               3 File(s)            114 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.git\refs\tags
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.vs
+
+05/22/2018  03:37 PM    <DIR>          ToDoTodayNew
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.vs\ToDoTodayNew
+
+05/22/2018  03:37 PM    <DIR>          .
+05/22/2018  03:37 PM    <DIR>          ..
+05/21/2018  09:13 AM    <DIR>          DesignTimeBuild
+05/22/2018  03:38 PM    <DIR>          v14
+06/04/2018  12:54 PM    <DIR>          v15
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.vs\ToDoTodayNew\DesignTimeBuild
+
+05/21/2018  09:13 AM    <DIR>          .
+05/21/2018  09:13 AM    <DIR>          ..
+06/07/2018  11:14 AM             1,292 .dtbcache
+               1 File(s)          1,292 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.vs\ToDoTodayNew\v14
+
+05/22/2018  03:38 PM    <DIR>          .
+05/22/2018  03:38 PM    <DIR>          ..
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.vs\ToDoTodayNew\v15
+
+06/04/2018  12:54 PM    <DIR>          .
+06/04/2018  12:54 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          Server
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.vs\ToDoTodayNew\v15\Server
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+05/24/2018  04:19 PM    <DIR>          sqlite3
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\.vs\ToDoTodayNew\v15\Server\sqlite3
+
+05/24/2018  04:19 PM    <DIR>          .
+05/24/2018  04:19 PM    <DIR>          ..
+03/25/2018  12:47 PM                 0 db.lock
+05/22/2018  01:44 PM         1,380,352 storage.ide
+06/25/2018  10:12 AM            32,768 storage.ide-shm
+06/07/2018  10:27 AM         2,319,592 storage.ide-wal
+               4 File(s)      3,732,712 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin
+
+06/01/2018  04:30 PM    <DIR>          .
+06/01/2018  04:30 PM    <DIR>          ..
+06/25/2018  11:18 AM    <DIR>          Debug
+05/10/2018  03:56 PM    <DIR>          Release
+06/01/2018  04:29 PM        20,011,159 ToDoTodayNoCF.zip
+               1 File(s)     20,011,159 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug
+
+06/25/2018  11:18 AM    <DIR>          .
+06/25/2018  11:18 AM    <DIR>          ..
+06/25/2018  11:18 AM    <DIR>          app.publish
+05/31/2018  03:50 PM            30,720 BuildSqliteCF.dll
+05/31/2018  03:50 PM            99,840 BuildSqliteCF.pdb
+03/02/2018  01:07 PM            10,240 CommonServiceLocator.dll
+06/25/2018  10:50 AM    <DIR>          de
+06/25/2018  10:50 AM    <DIR>          en
+10/23/2017  01:15 PM         5,225,168 EntityFramework.dll
+10/23/2017  01:15 PM           622,288 EntityFramework.SqlServer.dll
+10/23/2017  01:15 PM           158,388 EntityFramework.SqlServer.xml
+10/23/2017  01:15 PM         3,680,079 EntityFramework.xml
+06/25/2018  10:50 AM    <DIR>          es
+06/25/2018  10:50 AM    <DIR>          fr
+02/12/2018  02:17 PM            30,208 GalaSoft.MvvmLight.dll
+02/12/2018  02:17 PM            21,504 GalaSoft.MvvmLight.Extras.dll
+02/12/2018  02:17 PM            36,352 GalaSoft.MvvmLight.Extras.pdb
+02/12/2018  02:17 PM            27,389 GalaSoft.MvvmLight.Extras.xml
+02/12/2018  02:17 PM            95,744 GalaSoft.MvvmLight.pdb
+02/12/2018  02:17 PM            13,824 GalaSoft.MvvmLight.Platform.dll
+02/12/2018  02:17 PM            32,256 GalaSoft.MvvmLight.Platform.pdb
+02/12/2018  02:17 PM            21,236 GalaSoft.MvvmLight.Platform.xml
+02/12/2018  02:17 PM           108,878 GalaSoft.MvvmLight.xml
+06/01/2018  11:01 AM            68,096 GongSolutions.Wpf.DragDrop.dll
+01/18/2017  12:20 AM            66,048 GongSolutions.Wpf.DragDrop.dll.unsigned
+06/01/2018  11:01 AM           120,320 GongSolutions.Wpf.DragDrop.pdb
+01/18/2017  12:20 AM            65,303 GongSolutions.Wpf.DragDrop.xml
+06/25/2018  10:50 AM    <DIR>          hu
+06/25/2018  10:50 AM    <DIR>          it
+06/25/2018  10:50 AM    <DIR>          ja
+06/25/2018  10:50 AM    <DIR>          ko
+05/31/2018  03:45 PM             6,144 LoggerLib.dll
+05/31/2018  03:45 PM            15,872 LoggerLib.pdb
+02/18/2013  03:30 PM           144,496 Microsoft.Expression.Drawing.dll
+02/18/2013  03:30 PM           108,168 Microsoft.Expression.Interactions.dll
+05/14/2018  10:28 PM         9,310,400 Microsoft.ReportViewer.Common.dll
+05/14/2018  10:28 PM           622,792 Microsoft.ReportViewer.WinForms.dll
+04/30/2016  09:11 AM           396,992 Microsoft.SqlServer.Types.dll
+06/25/2018  10:50 AM    <DIR>          pt
+06/25/2018  10:50 AM    <DIR>          pt-BR
+06/25/2018  10:50 AM    <DIR>          ro
+06/25/2018  10:50 AM    <DIR>          ru
+05/25/2018  08:34 AM            48,128 SQLite.CodeFirst.dll
+05/25/2018  08:34 AM           151,040 SQLite.CodeFirst.pdb
+06/25/2018  10:50 AM    <DIR>          sv
+03/02/2018  08:51 AM           345,600 System.Data.SQLite.dll
+03/02/2018  08:51 AM               671 System.Data.SQLite.dll.config
+03/02/2018  08:51 AM           184,832 System.Data.SQLite.EF6.dll
+03/02/2018  08:51 AM           184,832 System.Data.SQLite.Linq.dll
+03/02/2018  08:51 AM         1,052,597 System.Data.SQLite.xml
+02/12/2018  02:17 PM            55,904 System.Windows.Interactivity.dll
+06/25/2018  11:18 AM             2,211 T3.application
+06/25/2018  11:16 AM           402,944 T3.exe
+06/04/2018  03:41 PM             4,236 T3.exe.config
+06/25/2018  11:18 AM            54,183 T3.exe.manifest
+06/25/2018  11:16 AM           335,360 T3.pdb
+05/21/2018  08:59 AM             2,211 T3.vshost.application
+05/22/2018  03:37 PM            22,688 T3.vshost.exe
+03/25/2018  10:39 AM             4,236 T3.vshost.exe.config
+05/21/2018  08:59 AM            54,013 T3.vshost.exe.manifest
+05/07/2018  09:44 AM            53,248 TDTDb.sqlite
+06/25/2018  10:50 AM    <DIR>          x64
+06/25/2018  10:50 AM    <DIR>          x86
+03/05/2018  12:10 PM           423,936 Xceed.Wpf.AvalonDock.dll
+03/05/2018  12:10 PM            87,040 Xceed.Wpf.AvalonDock.Themes.Aero.dll
+03/05/2018  12:10 PM            79,360 Xceed.Wpf.AvalonDock.Themes.Metro.dll
+03/05/2018  12:10 PM            83,968 Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+03/05/2018  12:10 PM         2,435,072 Xceed.Wpf.DataGrid.dll
+03/05/2018  12:10 PM         1,093,120 Xceed.Wpf.Toolkit.dll
+06/25/2018  10:50 AM    <DIR>          zh-Hans
+06/25/2018  10:50 AM    <DIR>          zh-Hant
+              51 File(s)     28,300,175 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\app.publish
+
+06/25/2018  11:18 AM    <DIR>          .
+06/25/2018  11:18 AM    <DIR>          ..
+06/25/2018  11:18 AM           403,904 T3.exe
+               1 File(s)        403,904 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\de
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+02/18/2013  03:35 PM            22,176 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  03:35 PM            22,736 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:12 AM            48,832 Microsoft.SqlServer.Types.resources.dll
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               4 File(s)         99,888 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\en
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+02/18/2013  03:30 PM            23,248 Microsoft.Expression.Interactions.resources.dll
+               1 File(s)         23,248 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\es
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+02/18/2013  03:47 PM            22,176 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  03:47 PM            22,736 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:11 AM            48,840 Microsoft.SqlServer.Types.resources.dll
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               4 File(s)         99,896 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\fr
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+02/18/2013  03:39 PM            22,176 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  03:39 PM            22,720 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:12 AM            48,840 Microsoft.SqlServer.Types.resources.dll
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               4 File(s)         99,880 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\hu
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\it
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+02/18/2013  03:42 PM            22,176 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  03:42 PM            22,720 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:12 AM            48,832 Microsoft.SqlServer.Types.resources.dll
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               4 File(s)         99,872 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\ja
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+02/18/2013  03:55 PM            22,192 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  03:55 PM            23,248 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:09 AM            52,928 Microsoft.SqlServer.Types.resources.dll
+               3 File(s)         98,368 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\ko
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+02/18/2013  03:50 PM            22,176 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  03:50 PM            22,720 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:12 AM            48,832 Microsoft.SqlServer.Types.resources.dll
+               3 File(s)         93,728 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\pt
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+04/30/2016  09:11 AM            48,832 Microsoft.SqlServer.Types.resources.dll
+               1 File(s)         48,832 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\pt-BR
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\ro
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\ru
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+02/18/2013  03:58 PM            22,192 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  03:58 PM            23,760 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:09 AM            57,024 Microsoft.SqlServer.Types.resources.dll
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               4 File(s)        109,120 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\sv
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+03/05/2018  12:10 PM             5,632 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          5,632 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\x64
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+03/25/2018  10:39 AM         1,543,168 SQLite.Interop.dll
+               1 File(s)      1,543,168 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\x86
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+03/25/2018  10:39 AM         1,209,856 SQLite.Interop.dll
+               1 File(s)      1,209,856 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\zh-Hans
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+02/18/2013  04:06 PM            22,192 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  04:06 PM            22,720 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:12 AM            36,032 Microsoft.SqlServer.Types.resources.dll
+03/05/2018  12:10 PM             5,632 Xceed.Wpf.AvalonDock.resources.dll
+               4 File(s)         86,576 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\zh-Hant
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+02/18/2013  04:01 PM            22,176 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  04:01 PM            22,720 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:12 AM            36,032 Microsoft.SqlServer.Types.resources.dll
+               3 File(s)         80,928 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+05/10/2018  03:56 PM    <DIR>          app.publish
+05/07/2018  10:02 AM            30,720 BuildSqliteCF.dll
+05/07/2018  10:02 AM            99,840 BuildSqliteCF.pdb
+03/02/2018  01:07 PM            10,240 CommonServiceLocator.dll
+05/10/2018  03:56 PM    <DIR>          de
+05/10/2018  03:56 PM    <DIR>          en
+10/23/2017  01:15 PM         5,225,168 EntityFramework.dll
+10/23/2017  01:15 PM           622,288 EntityFramework.SqlServer.dll
+10/23/2017  01:15 PM           158,388 EntityFramework.SqlServer.xml
+10/23/2017  01:15 PM         3,680,079 EntityFramework.xml
+05/10/2018  03:56 PM    <DIR>          es
+05/10/2018  03:56 PM    <DIR>          fr
+02/12/2018  02:17 PM            30,208 GalaSoft.MvvmLight.dll
+02/12/2018  02:17 PM            21,504 GalaSoft.MvvmLight.Extras.dll
+02/12/2018  02:17 PM            36,352 GalaSoft.MvvmLight.Extras.pdb
+02/12/2018  02:17 PM            27,389 GalaSoft.MvvmLight.Extras.xml
+02/12/2018  02:17 PM            95,744 GalaSoft.MvvmLight.pdb
+02/12/2018  02:17 PM            13,824 GalaSoft.MvvmLight.Platform.dll
+02/12/2018  02:17 PM            32,256 GalaSoft.MvvmLight.Platform.pdb
+02/12/2018  02:17 PM            21,236 GalaSoft.MvvmLight.Platform.xml
+02/12/2018  02:17 PM           108,878 GalaSoft.MvvmLight.xml
+01/18/2017  12:20 AM            66,048 GongSolutions.Wpf.DragDrop.dll
+01/18/2017  12:20 AM           142,848 GongSolutions.Wpf.DragDrop.pdb
+01/18/2017  12:20 AM            65,303 GongSolutions.Wpf.DragDrop.xml
+05/10/2018  03:56 PM    <DIR>          hu
+05/10/2018  03:56 PM    <DIR>          it
+05/10/2018  03:56 PM    <DIR>          ja
+05/10/2018  03:56 PM    <DIR>          ko
+11/20/2017  10:15 AM             6,144 LoggerLib.dll
+11/20/2017  10:15 AM            15,872 LoggerLib.pdb
+02/18/2013  03:30 PM           144,496 Microsoft.Expression.Drawing.dll
+02/18/2013  03:30 PM           108,168 Microsoft.Expression.Interactions.dll
+11/01/2017  12:28 PM         9,310,400 Microsoft.ReportViewer.Common.dll
+11/01/2017  12:28 PM           622,792 Microsoft.ReportViewer.WinForms.dll
+04/30/2016  09:11 AM           396,992 Microsoft.SqlServer.Types.dll
+05/10/2018  03:56 PM    <DIR>          pt
+05/10/2018  03:56 PM    <DIR>          pt-BR
+05/10/2018  03:56 PM    <DIR>          ro
+05/10/2018  03:56 PM    <DIR>          ru
+03/12/2018  10:52 AM            48,128 SQLite.CodeFirst.dll
+03/12/2018  10:52 AM           151,040 SQLite.CodeFirst.pdb
+05/10/2018  03:56 PM    <DIR>          sv
+03/02/2018  08:51 AM           345,600 System.Data.SQLite.dll
+03/02/2018  08:51 AM               671 System.Data.SQLite.dll.config
+03/02/2018  08:51 AM           184,832 System.Data.SQLite.EF6.dll
+03/02/2018  08:51 AM           184,832 System.Data.SQLite.Linq.dll
+03/02/2018  08:51 AM         1,052,597 System.Data.SQLite.xml
+02/12/2018  02:17 PM            55,904 System.Windows.Interactivity.dll
+05/10/2018  03:56 PM             2,211 T3.application
+05/10/2018  03:56 PM           375,808 T3.exe
+03/25/2018  10:39 AM             4,236 T3.exe.config
+05/10/2018  03:56 PM            53,176 T3.exe.manifest
+05/10/2018  03:56 PM           304,640 T3.pdb
+05/07/2018  09:44 AM            53,248 TDTDb.sqlite
+05/10/2018  03:56 PM    <DIR>          x64
+05/10/2018  03:56 PM    <DIR>          x86
+03/05/2018  12:10 PM           423,936 Xceed.Wpf.AvalonDock.dll
+03/05/2018  12:10 PM            87,040 Xceed.Wpf.AvalonDock.Themes.Aero.dll
+03/05/2018  12:10 PM            79,360 Xceed.Wpf.AvalonDock.Themes.Metro.dll
+03/05/2018  12:10 PM            83,968 Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+03/05/2018  12:10 PM         2,435,072 Xceed.Wpf.DataGrid.dll
+03/05/2018  12:10 PM         1,093,120 Xceed.Wpf.Toolkit.dll
+05/10/2018  03:56 PM    <DIR>          zh-Hans
+05/10/2018  03:56 PM    <DIR>          zh-Hant
+              46 File(s)     28,112,596 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\app.publish
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+05/10/2018  03:56 PM           376,768 T3.exe
+               1 File(s)        376,768 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\de
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+02/18/2013  03:35 PM            22,176 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  03:35 PM            22,736 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:12 AM            48,832 Microsoft.SqlServer.Types.resources.dll
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               4 File(s)         99,888 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\en
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+02/18/2013  03:30 PM            23,248 Microsoft.Expression.Interactions.resources.dll
+               1 File(s)         23,248 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\es
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+02/18/2013  03:47 PM            22,176 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  03:47 PM            22,736 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:11 AM            48,840 Microsoft.SqlServer.Types.resources.dll
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               4 File(s)         99,896 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\fr
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+02/18/2013  03:39 PM            22,176 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  03:39 PM            22,720 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:12 AM            48,840 Microsoft.SqlServer.Types.resources.dll
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               4 File(s)         99,880 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\hu
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\it
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+02/18/2013  03:42 PM            22,176 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  03:42 PM            22,720 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:12 AM            48,832 Microsoft.SqlServer.Types.resources.dll
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               4 File(s)         99,872 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\ja
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+02/18/2013  03:55 PM            22,192 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  03:55 PM            23,248 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:09 AM            52,928 Microsoft.SqlServer.Types.resources.dll
+               3 File(s)         98,368 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\ko
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+02/18/2013  03:50 PM            22,176 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  03:50 PM            22,720 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:12 AM            48,832 Microsoft.SqlServer.Types.resources.dll
+               3 File(s)         93,728 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\pt
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+04/30/2016  09:11 AM            48,832 Microsoft.SqlServer.Types.resources.dll
+               1 File(s)         48,832 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\pt-BR
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\ro
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\ru
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+02/18/2013  03:58 PM            22,192 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  03:58 PM            23,760 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:09 AM            57,024 Microsoft.SqlServer.Types.resources.dll
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               4 File(s)        109,120 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\sv
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+03/05/2018  12:10 PM             5,632 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          5,632 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\x64
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+03/25/2018  10:39 AM         1,543,168 SQLite.Interop.dll
+               1 File(s)      1,543,168 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\x86
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+03/25/2018  10:39 AM         1,209,856 SQLite.Interop.dll
+               1 File(s)      1,209,856 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\zh-Hans
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+02/18/2013  04:06 PM            22,192 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  04:06 PM            22,720 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:12 AM            36,032 Microsoft.SqlServer.Types.resources.dll
+03/05/2018  12:10 PM             5,632 Xceed.Wpf.AvalonDock.resources.dll
+               4 File(s)         86,576 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Release\zh-Hant
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+02/18/2013  04:01 PM            22,176 Microsoft.Expression.Drawing.resources.dll
+02/18/2013  04:01 PM            22,720 Microsoft.Expression.Interactions.resources.dll
+04/30/2016  09:12 AM            36,032 Microsoft.SqlServer.Types.resources.dll
+               3 File(s)         80,928 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Converters
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM               936 BindingErrorEventArgsConverter.cs
+03/25/2018  10:39 AM             1,089 BindingSourcePropertyConverter.cs
+03/25/2018  10:39 AM             1,102 EnumToBoolConverter.cs
+03/25/2018  10:39 AM             1,203 ErrorCollectionConverter.cs
+               4 File(s)          4,330 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Images
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM               502 Add.png
+03/25/2018  10:39 AM               874 Folder.png
+03/25/2018  10:39 AM               813 Home.png
+03/25/2018  10:39 AM               977 MoveTDT.png
+03/25/2018  10:39 AM               977 Project.png
+03/25/2018  10:39 AM               842 Remove.png
+03/25/2018  10:39 AM               874 SubTask.png
+03/25/2018  10:39 AM               946 Task.png
+03/25/2018  10:39 AM            14,848 Thumbs.db
+               9 File(s)         21,653 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Messages
+
+04/09/2018  11:12 AM    <DIR>          .
+04/09/2018  11:12 AM    <DIR>          ..
+03/25/2018  10:39 AM               460 CommandMessage.cs
+03/25/2018  10:39 AM               580 InEdit.cs
+04/09/2018  11:12 AM             1,069 NavigateMessage.cs
+03/25/2018  10:39 AM               240 UserMessage.cs
+               4 File(s)          2,349 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Model
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM               253 DataItem.cs
+03/25/2018  10:39 AM               354 DataService.cs
+03/25/2018  10:39 AM               230 IDataService.cs
+               3 File(s)            837 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+06/25/2018  11:16 AM    <DIR>          Debug
+05/10/2018  03:56 PM    <DIR>          Release
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Debug
+
+06/25/2018  11:16 AM    <DIR>          .
+06/25/2018  11:16 AM    <DIR>          ..
+06/25/2018  11:16 AM             1,525 App.baml
+06/25/2018  11:16 AM             2,852 App.g.cs
+06/25/2018  11:16 AM             2,852 App.g.i.cs
+06/04/2018  03:20 PM            17,334 DesignTimeResolveAssemblyReferences.cache
+06/04/2018  03:54 PM            18,654 DesignTimeResolveAssemblyReferencesInput.cache
+06/25/2018  11:16 AM             2,998 GeneratedInternalTypeHelper.g.cs
+06/25/2018  11:16 AM             2,998 GeneratedInternalTypeHelper.g.i.cs
+06/25/2018  10:50 AM               180 Planner.Properties.Resources.resources
+06/25/2018  11:16 AM    <DIR>          Resources
+06/25/2018  10:50 AM    <DIR>          Support
+06/25/2018  11:18 AM             2,211 T3.application
+06/25/2018  11:16 AM           402,944 T3.exe
+06/25/2018  11:18 AM            54,183 T3.exe.manifest
+06/25/2018  11:16 AM           120,683 T3.g.resources
+06/25/2018  11:16 AM           335,360 T3.pdb
+06/25/2018  10:50 AM             1,300 T3.TrustInfo.xml
+06/25/2018  10:50 AM               805 T3_Content.g.cs
+06/25/2018  10:50 AM               805 T3_Content.g.i.cs
+06/25/2018  11:18 AM               537 T3_MarkupCompile.cache
+06/04/2018  03:54 PM               538 T3_MarkupCompile.i.cache
+06/25/2018  11:16 AM               526 T3_MarkupCompile.lref
+03/25/2018  12:47 PM                 0 TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+03/25/2018  12:47 PM                 0 TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+03/25/2018  12:47 PM                 0 TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+03/25/2018  04:08 PM    <DIR>          TempPE
+06/25/2018  11:18 AM                 0 ToDoTodayNoCF.csproj.CopyComplete
+06/25/2018  10:50 AM                42 ToDoTodayNoCF.csproj.CoreCompileInputs.cache
+06/25/2018  11:16 AM             8,897 ToDoTodayNoCF.csproj.FileListAbsolute.txt
+06/25/2018  10:50 AM               954 ToDoTodayNoCF.csproj.GenerateResource.cache
+06/25/2018  10:50 AM           189,448 ToDoTodayNoCF.csprojAssemblyReference.cache
+05/22/2018  03:40 PM           261,038 ToDoTodayNoCF.csprojResolveAssemblyReference.cache
+03/25/2018  12:47 PM    <DIR>          Views
+              28 File(s)      1,429,664 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Debug\Resources
+
+06/25/2018  11:16 AM    <DIR>          .
+06/25/2018  11:16 AM    <DIR>          ..
+06/25/2018  11:16 AM            25,524 Dictionary1.baml
+06/25/2018  11:16 AM             3,518 TreeResources.baml
+               2 File(s)         29,042 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Debug\Support
+
+06/25/2018  10:50 AM    <DIR>          .
+06/25/2018  10:50 AM    <DIR>          ..
+06/25/2018  10:50 AM             2,046 HourGlass.baml
+06/25/2018  10:50 AM             3,416 HourGlass.g.cs
+06/25/2018  10:50 AM             3,416 HourGlass.g.i.cs
+06/25/2018  10:50 AM             2,870 Throbber.baml
+06/25/2018  10:50 AM             3,936 Throbber.g.cs
+06/25/2018  10:50 AM             3,936 Throbber.g.i.cs
+               6 File(s)         19,620 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Debug\TempPE
+
+03/25/2018  04:08 PM    <DIR>          .
+03/25/2018  04:08 PM    <DIR>          ..
+06/10/2018  03:26 PM             3,584 Properties.Resources.Designer.cs.dll
+               1 File(s)          3,584 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Debug\Views
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+06/25/2018  11:16 AM    <DIR>          Plans
+06/25/2018  11:16 AM    <DIR>          Reports
+06/25/2018  11:16 AM    <DIR>          Shell
+06/25/2018  11:16 AM    <DIR>          ToDos
+06/25/2018  11:16 AM    <DIR>          Tracks
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Debug\Views\Plans
+
+06/25/2018  11:16 AM    <DIR>          .
+06/25/2018  11:16 AM    <DIR>          ..
+06/25/2018  11:16 AM             1,720 ADialog.baml
+06/25/2018  11:16 AM             3,833 ADialog.g.cs
+06/25/2018  11:16 AM             3,833 ADialog.g.i.cs
+06/25/2018  10:50 AM             1,791 InputDialog.baml
+06/25/2018  10:50 AM             5,263 InputDialog.g.cs
+06/25/2018  10:50 AM             5,263 InputDialog.g.i.cs
+06/25/2018  11:16 AM            14,401 PlansView.baml
+06/25/2018  11:16 AM            12,435 PlansView.g.cs
+06/25/2018  11:16 AM            12,435 PlansView.g.i.cs
+06/25/2018  10:50 AM             1,817 ShutDownDialog.baml
+06/25/2018  10:50 AM             5,299 ShutDownDialog.g.cs
+06/25/2018  10:50 AM             5,299 ShutDownDialog.g.i.cs
+              12 File(s)         73,389 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Debug\Views\Reports
+
+06/25/2018  11:16 AM    <DIR>          .
+06/25/2018  11:16 AM    <DIR>          ..
+06/25/2018  11:16 AM             2,338 ReportsView.baml
+06/25/2018  11:16 AM             4,130 ReportsView.g.cs
+06/25/2018  11:16 AM             4,130 ReportsView.g.i.cs
+               3 File(s)         10,598 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Debug\Views\Shell
+
+06/25/2018  11:16 AM    <DIR>          .
+06/25/2018  11:16 AM    <DIR>          ..
+06/25/2018  11:16 AM             1,967 ShellView.baml
+06/25/2018  11:16 AM             4,487 ShellView.g.cs
+06/25/2018  11:16 AM             4,487 ShellView.g.i.cs
+               3 File(s)         10,941 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Debug\Views\ToDos
+
+06/25/2018  11:16 AM    <DIR>          .
+06/25/2018  11:16 AM    <DIR>          ..
+06/25/2018  11:16 AM            16,778 ToDosView.baml
+06/25/2018  11:16 AM             9,720 ToDosView.g.cs
+06/25/2018  11:16 AM             9,720 ToDosView.g.i.cs
+               3 File(s)         36,218 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Debug\Views\Tracks
+
+06/25/2018  11:16 AM    <DIR>          .
+06/25/2018  11:16 AM    <DIR>          ..
+06/25/2018  11:16 AM             9,043 TracksView.baml
+06/25/2018  11:16 AM             8,708 TracksView.g.cs
+06/25/2018  11:16 AM             8,708 TracksView.g.i.cs
+               3 File(s)         26,459 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Release
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+05/10/2018  03:56 PM             1,313 App.baml
+05/10/2018  03:56 PM             2,852 App.g.cs
+05/10/2018  03:56 PM             2,852 App.g.i.cs
+05/10/2018  03:56 PM             2,998 GeneratedInternalTypeHelper.g.cs
+05/10/2018  03:56 PM             2,998 GeneratedInternalTypeHelper.g.i.cs
+05/10/2018  03:56 PM               180 Planner.Properties.Resources.resources
+05/10/2018  03:56 PM    <DIR>          Resources
+05/10/2018  03:56 PM    <DIR>          Support
+05/10/2018  03:56 PM             2,211 T3.application
+05/10/2018  03:56 PM           375,808 T3.exe
+05/10/2018  03:56 PM            53,176 T3.exe.manifest
+05/10/2018  03:56 PM           102,595 T3.g.resources
+05/10/2018  03:56 PM           304,640 T3.pdb
+05/10/2018  03:56 PM             1,300 T3.TrustInfo.xml
+05/10/2018  03:56 PM               805 T3_Content.g.cs
+05/10/2018  03:56 PM               805 T3_Content.g.i.cs
+05/10/2018  03:56 PM               534 T3_MarkupCompile.cache
+05/10/2018  03:56 PM               526 T3_MarkupCompile.lref
+05/10/2018  03:56 PM                 0 TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+05/10/2018  03:56 PM                 0 TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+05/10/2018  03:56 PM                 0 TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+05/10/2018  03:56 PM    <DIR>          TempPE
+05/10/2018  03:56 PM                 0 ToDoTodayNoCF.csproj.CopyComplete
+05/10/2018  03:56 PM                42 ToDoTodayNoCF.csproj.CoreCompileInputs.cache
+05/10/2018  03:56 PM             9,156 ToDoTodayNoCF.csproj.FileListAbsolute.txt
+05/10/2018  03:56 PM               954 ToDoTodayNoCF.csproj.GenerateResource.cache
+05/10/2018  03:56 PM           263,664 ToDoTodayNoCF.csprojResolveAssemblyReference.cache
+05/10/2018  03:56 PM    <DIR>          Views
+              24 File(s)      1,129,409 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Release\Resources
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+05/10/2018  03:56 PM            21,637 Dictionary1.baml
+05/10/2018  03:56 PM             2,567 TreeResources.baml
+               2 File(s)         24,204 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Release\Support
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+05/10/2018  03:56 PM             1,733 HourGlass.baml
+05/10/2018  03:56 PM             3,416 HourGlass.g.cs
+05/10/2018  03:56 PM             3,416 HourGlass.g.i.cs
+05/10/2018  03:56 PM             2,334 Throbber.baml
+05/10/2018  03:56 PM             3,936 Throbber.g.cs
+05/10/2018  03:56 PM             3,936 Throbber.g.i.cs
+               6 File(s)         18,771 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Release\TempPE
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+05/10/2018  03:56 PM             3,584 Properties.Resources.Designer.cs.dll
+               1 File(s)          3,584 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Release\Views
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+05/10/2018  03:56 PM    <DIR>          Plans
+05/10/2018  03:56 PM    <DIR>          Reports
+05/10/2018  03:56 PM    <DIR>          Shell
+05/10/2018  03:56 PM    <DIR>          ToDos
+05/10/2018  03:56 PM    <DIR>          Tracks
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Release\Views\Plans
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+05/10/2018  03:56 PM             1,422 ADialog.baml
+05/10/2018  03:56 PM             3,833 ADialog.g.cs
+05/10/2018  03:56 PM             3,833 ADialog.g.i.cs
+05/10/2018  03:56 PM             1,402 InputDialog.baml
+05/10/2018  03:56 PM             5,263 InputDialog.g.cs
+05/10/2018  03:56 PM             5,263 InputDialog.g.i.cs
+05/10/2018  03:56 PM            10,188 PlansView.baml
+05/10/2018  03:56 PM            12,435 PlansView.g.cs
+05/10/2018  03:56 PM            12,435 PlansView.g.i.cs
+05/10/2018  03:56 PM             1,428 ShutDownDialog.baml
+05/10/2018  03:56 PM             5,299 ShutDownDialog.g.cs
+05/10/2018  03:56 PM             5,299 ShutDownDialog.g.i.cs
+              12 File(s)         68,100 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Release\Views\Reports
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+05/10/2018  03:56 PM             1,985 ReportsView.baml
+05/10/2018  03:56 PM             4,130 ReportsView.g.cs
+05/10/2018  03:56 PM             4,130 ReportsView.g.i.cs
+               3 File(s)         10,245 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Release\Views\Shell
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+05/10/2018  03:56 PM             1,592 ShellView.baml
+05/10/2018  03:56 PM             4,487 ShellView.g.cs
+05/10/2018  03:56 PM             4,487 ShellView.g.i.cs
+               3 File(s)         10,566 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Release\Views\ToDos
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+05/10/2018  03:56 PM            12,725 ToDosView.baml
+05/10/2018  03:56 PM            10,162 ToDosView.g.cs
+05/10/2018  03:56 PM            10,162 ToDosView.g.i.cs
+               3 File(s)         33,049 bytes
+
+ Directory of C:\Projects\Working\TDT0325\obj\Release\Views\Tracks
+
+05/10/2018  03:56 PM    <DIR>          .
+05/10/2018  03:56 PM    <DIR>          ..
+05/10/2018  03:56 PM             6,924 TracksView.baml
+05/10/2018  03:56 PM             8,708 TracksView.g.cs
+05/10/2018  03:56 PM             8,708 TracksView.g.i.cs
+               3 File(s)         24,340 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          CommonServiceLocator.2.0.3
+03/25/2018  12:47 PM    <DIR>          EntityFramework.6.2.0
+03/25/2018  12:47 PM    <DIR>          Extended.Wpf.Toolkit.3.3.0
+03/25/2018  12:47 PM    <DIR>          gong-wpf-dragdrop.1.1.0
+03/25/2018  12:47 PM    <DIR>          MvvmLight.5.4.1
+03/25/2018  12:47 PM    <DIR>          MvvmLightLibs.5.4.1
+03/25/2018  12:47 PM    <DIR>          System.Data.SQLite.1.0.108.0
+03/25/2018  12:47 PM    <DIR>          System.Data.SQLite.Core.1.0.108.0
+03/25/2018  12:47 PM    <DIR>          System.Data.SQLite.EF6.1.0.108.0
+03/25/2018  12:47 PM    <DIR>          System.Data.SQLite.Linq.1.0.108.0
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\CommonServiceLocator.2.0.3
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM            31,484 CommonServiceLocator.2.0.3.nupkg
+03/25/2018  12:47 PM    <DIR>          lib
+               1 File(s)         31,484 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\CommonServiceLocator.2.0.3\lib
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          net40
+03/25/2018  12:47 PM    <DIR>          net45
+03/25/2018  12:47 PM    <DIR>          net47
+03/25/2018  12:47 PM    <DIR>          netcoreapp1.0
+03/25/2018  12:47 PM    <DIR>          netstandard1.0
+03/25/2018  12:47 PM    <DIR>          netstandard2.0
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\CommonServiceLocator.2.0.3\lib\net40
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  01:07 PM            15,360 CommonServiceLocator.dll
+               1 File(s)         15,360 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\CommonServiceLocator.2.0.3\lib\net45
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  01:07 PM            10,240 CommonServiceLocator.dll
+               1 File(s)         10,240 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\CommonServiceLocator.2.0.3\lib\net47
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  01:07 PM             9,728 CommonServiceLocator.dll
+               1 File(s)          9,728 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\CommonServiceLocator.2.0.3\lib\netcoreapp1.0
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  01:07 PM             9,728 CommonServiceLocator.dll
+               1 File(s)          9,728 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\CommonServiceLocator.2.0.3\lib\netstandard1.0
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  01:07 PM             9,728 CommonServiceLocator.dll
+               1 File(s)          9,728 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\CommonServiceLocator.2.0.3\lib\netstandard2.0
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  01:07 PM             9,728 CommonServiceLocator.dll
+               1 File(s)          9,728 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\EntityFramework.6.2.0
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          content
+03/25/2018  12:47 PM         4,283,636 EntityFramework.6.2.0.nupkg
+03/25/2018  12:47 PM    <DIR>          lib
+03/25/2018  12:47 PM    <DIR>          tools
+               1 File(s)      4,283,636 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\EntityFramework.6.2.0\content
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          net40
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\EntityFramework.6.2.0\content\net40
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+10/23/2017  01:15 PM               209 App.config.transform
+10/23/2017  01:15 PM               209 Web.config.transform
+               2 File(s)            418 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\EntityFramework.6.2.0\lib
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          net40
+03/25/2018  12:47 PM    <DIR>          net45
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\EntityFramework.6.2.0\lib\net40
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+10/23/2017  01:15 PM         5,003,984 EntityFramework.dll
+10/23/2017  01:15 PM           616,656 EntityFramework.SqlServer.dll
+10/23/2017  01:15 PM           148,963 EntityFramework.SqlServer.xml
+10/23/2017  01:15 PM         3,256,661 EntityFramework.xml
+               4 File(s)      9,026,264 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\EntityFramework.6.2.0\lib\net45
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+10/23/2017  01:15 PM         5,225,168 EntityFramework.dll
+10/23/2017  01:15 PM           622,288 EntityFramework.SqlServer.dll
+10/23/2017  01:15 PM           158,388 EntityFramework.SqlServer.xml
+10/23/2017  01:15 PM         3,680,079 EntityFramework.xml
+               4 File(s)      9,685,923 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\EntityFramework.6.2.0\tools
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+10/23/2017  01:15 PM             1,970 about_EntityFramework.help.txt
+10/23/2017  01:15 PM            50,384 EntityFramework.PowerShell.dll
+10/23/2017  01:15 PM            13,520 EntityFramework.PowerShell.Utility.dll
+10/23/2017  01:15 PM            24,836 EntityFramework.psd1
+10/23/2017  01:15 PM            44,793 EntityFramework.psm1
+10/23/2017  01:15 PM            10,028 init.ps1
+10/23/2017  01:15 PM            10,141 install.ps1
+10/23/2017  01:15 PM           542,928 migrate.exe
+               8 File(s)        698,600 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\Extended.Wpf.Toolkit.3.3.0
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM         1,874,360 Extended.Wpf.Toolkit.3.3.0.nupkg
+03/25/2018  12:47 PM    <DIR>          lib
+03/25/2018  12:47 PM    <DIR>          tools
+               1 File(s)      1,874,360 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\Extended.Wpf.Toolkit.3.3.0\lib
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          net35
+03/25/2018  12:47 PM    <DIR>          net40
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\Extended.Wpf.Toolkit.3.3.0\lib\net35
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/05/2018  12:10 PM           467,288 WPFToolkit.dll
+03/05/2018  12:10 PM         1,106,944 Xceed.Wpf.Toolkit.dll
+               2 File(s)      1,574,232 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          de
+03/25/2018  12:47 PM    <DIR>          es
+03/25/2018  12:47 PM    <DIR>          fr
+03/25/2018  12:47 PM    <DIR>          hu
+03/25/2018  12:47 PM    <DIR>          it
+03/25/2018  12:47 PM    <DIR>          pt-BR
+03/25/2018  12:47 PM    <DIR>          ro
+03/25/2018  12:47 PM    <DIR>          ru
+03/25/2018  12:47 PM    <DIR>          sv
+03/05/2018  12:10 PM           423,936 Xceed.Wpf.AvalonDock.dll
+03/05/2018  12:10 PM            87,040 Xceed.Wpf.AvalonDock.Themes.Aero.dll
+03/05/2018  12:10 PM            79,360 Xceed.Wpf.AvalonDock.Themes.Metro.dll
+03/05/2018  12:10 PM            83,968 Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+03/05/2018  12:10 PM         2,435,072 Xceed.Wpf.DataGrid.dll
+03/05/2018  12:10 PM         1,093,120 Xceed.Wpf.Toolkit.dll
+03/25/2018  12:47 PM    <DIR>          zh-Hans
+               6 File(s)      4,202,496 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\de
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\es
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\fr
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\hu
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\it
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\pt-BR
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\ro
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\ru
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/05/2018  12:10 PM             6,144 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\sv
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/05/2018  12:10 PM             5,632 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          5,632 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\zh-Hans
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/05/2018  12:10 PM             5,632 Xceed.Wpf.AvalonDock.resources.dll
+               1 File(s)          5,632 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\Extended.Wpf.Toolkit.3.3.0\tools
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/05/2018  12:10 PM               138 install.ps1
+               1 File(s)            138 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\gong-wpf-dragdrop.1.1.0
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM           290,839 gong-wpf-dragdrop.1.1.0.nupkg
+03/25/2018  12:47 PM    <DIR>          lib
+               1 File(s)        290,839 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\gong-wpf-dragdrop.1.1.0\lib
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          net35
+03/25/2018  12:47 PM    <DIR>          net40
+03/25/2018  12:47 PM    <DIR>          net45
+06/01/2018  11:01 AM    <DIR>          net46
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\gong-wpf-dragdrop.1.1.0\lib\net35
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+01/18/2017  12:20 AM            66,048 GongSolutions.Wpf.DragDrop.dll
+01/18/2017  12:20 AM           142,848 GongSolutions.Wpf.DragDrop.pdb
+01/18/2017  12:20 AM            65,666 GongSolutions.Wpf.DragDrop.xml
+               3 File(s)        274,562 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\gong-wpf-dragdrop.1.1.0\lib\net40
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+01/18/2017  12:20 AM            66,048 GongSolutions.Wpf.DragDrop.dll
+01/18/2017  12:20 AM           142,848 GongSolutions.Wpf.DragDrop.pdb
+01/18/2017  12:20 AM            65,303 GongSolutions.Wpf.DragDrop.xml
+               3 File(s)        274,199 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\gong-wpf-dragdrop.1.1.0\lib\net45
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+01/18/2017  12:20 AM            66,048 GongSolutions.Wpf.DragDrop.dll
+01/18/2017  12:20 AM           142,848 GongSolutions.Wpf.DragDrop.pdb
+01/18/2017  12:20 AM            65,303 GongSolutions.Wpf.DragDrop.xml
+               3 File(s)        274,199 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\gong-wpf-dragdrop.1.1.0\lib\net46
+
+06/01/2018  11:01 AM    <DIR>          .
+06/01/2018  11:01 AM    <DIR>          ..
+01/18/2017  12:20 AM            66,048 GongSolutions.Wpf.DragDrop - Copy.dll
+06/01/2018  11:01 AM            68,096 GongSolutions.Wpf.DragDrop.dll
+01/18/2017  12:20 AM            66,048 GongSolutions.Wpf.DragDrop.dll.unsigned
+06/01/2018  11:01 AM           120,320 GongSolutions.Wpf.DragDrop.pdb
+01/18/2017  12:20 AM            65,303 GongSolutions.Wpf.DragDrop.xml
+               5 File(s)        385,815 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLight.5.4.1
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          Content
+03/25/2018  12:47 PM             6,049 MvvmLight.5.4.1.nupkg
+03/25/2018  12:47 PM    <DIR>          tools
+               1 File(s)          6,049 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLight.5.4.1\Content
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          ViewModel
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLight.5.4.1\Content\ViewModel
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+02/12/2018  02:17 PM               979 MainViewModel.cs.pp
+02/12/2018  02:17 PM             1,834 ViewModelLocator.cs.pp
+               2 File(s)          2,813 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLight.5.4.1\tools
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+02/12/2018  02:17 PM             7,421 install.ps1
+               1 File(s)          7,421 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLightLibs.5.4.1
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          lib
+03/25/2018  12:47 PM         1,095,922 MvvmLightLibs.5.4.1.nupkg
+               1 File(s)      1,095,922 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLightLibs.5.4.1\lib
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          monoandroid1
+03/25/2018  12:47 PM    <DIR>          net35
+03/25/2018  12:47 PM    <DIR>          net40
+03/25/2018  12:47 PM    <DIR>          net45
+03/25/2018  12:47 PM    <DIR>          portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10
+03/25/2018  12:47 PM    <DIR>          SL5
+03/25/2018  12:47 PM    <DIR>          uap10.0
+03/25/2018  12:47 PM    <DIR>          windows81
+03/25/2018  12:47 PM    <DIR>          wp8
+03/25/2018  12:47 PM    <DIR>          wp81
+03/25/2018  12:47 PM    <DIR>          wpa81
+03/25/2018  12:47 PM    <DIR>          xamarin.ios10
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLightLibs.5.4.1\lib\monoandroid1
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+02/12/2018  02:17 PM            30,208 GalaSoft.MvvmLight.dll
+02/12/2018  02:17 PM            21,504 GalaSoft.MvvmLight.Extras.dll
+02/12/2018  02:17 PM            36,352 GalaSoft.MvvmLight.Extras.pdb
+02/12/2018  02:17 PM            27,389 GalaSoft.MvvmLight.Extras.XML
+02/12/2018  02:17 PM            95,744 GalaSoft.MvvmLight.pdb
+02/12/2018  02:17 PM            40,960 GalaSoft.MvvmLight.Platform.dll
+02/12/2018  02:17 PM           101,888 GalaSoft.MvvmLight.Platform.pdb
+02/12/2018  02:17 PM            95,424 GalaSoft.MvvmLight.Platform.XML
+02/12/2018  02:17 PM           108,878 GalaSoft.MvvmLight.XML
+               9 File(s)        558,347 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLightLibs.5.4.1\lib\net35
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+02/12/2018  02:17 PM            29,696 GalaSoft.MvvmLight.dll
+02/12/2018  02:17 PM            23,040 GalaSoft.MvvmLight.Extras.dll
+02/12/2018  02:17 PM            44,544 GalaSoft.MvvmLight.Extras.pdb
+02/12/2018  02:17 PM            37,506 GalaSoft.MvvmLight.Extras.xml
+02/12/2018  02:17 PM            97,792 GalaSoft.MvvmLight.pdb
+02/12/2018  02:17 PM           107,615 GalaSoft.MvvmLight.xml
+02/12/2018  02:17 PM            45,056 System.Windows.Interactivity.dll
+02/12/2018  02:17 PM            58,082 System.Windows.Interactivity.xml
+               8 File(s)        443,331 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLightLibs.5.4.1\lib\net40
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+02/12/2018  02:17 PM            30,720 GalaSoft.MvvmLight.dll
+02/12/2018  02:17 PM            23,552 GalaSoft.MvvmLight.Extras.dll
+02/12/2018  02:17 PM            44,544 GalaSoft.MvvmLight.Extras.pdb
+02/12/2018  02:17 PM            37,371 GalaSoft.MvvmLight.Extras.xml
+02/12/2018  02:17 PM            97,792 GalaSoft.MvvmLight.pdb
+02/12/2018  02:17 PM           114,936 GalaSoft.MvvmLight.xml
+02/12/2018  02:17 PM            39,936 System.Windows.Interactivity.dll
+02/12/2018  02:17 PM            62,128 System.Windows.Interactivity.xml
+               8 File(s)        450,979 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLightLibs.5.4.1\lib\net45
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+02/12/2018  02:17 PM            30,208 GalaSoft.MvvmLight.dll
+02/12/2018  02:17 PM            21,504 GalaSoft.MvvmLight.Extras.dll
+02/12/2018  02:17 PM            36,352 GalaSoft.MvvmLight.Extras.pdb
+02/12/2018  02:17 PM            27,389 GalaSoft.MvvmLight.Extras.xml
+02/12/2018  02:17 PM            95,744 GalaSoft.MvvmLight.pdb
+02/12/2018  02:17 PM            13,824 GalaSoft.MvvmLight.Platform.dll
+02/12/2018  02:17 PM            32,256 GalaSoft.MvvmLight.Platform.pdb
+02/12/2018  02:17 PM            21,236 GalaSoft.MvvmLight.Platform.xml
+02/12/2018  02:17 PM           108,878 GalaSoft.MvvmLight.xml
+02/12/2018  02:17 PM            55,904 System.Windows.Interactivity.dll
+              10 File(s)        443,295 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLightLibs.5.4.1\lib\portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+02/12/2018  02:17 PM            30,208 GalaSoft.MvvmLight.dll
+02/12/2018  02:17 PM            21,504 GalaSoft.MvvmLight.Extras.dll
+02/12/2018  02:17 PM            36,352 GalaSoft.MvvmLight.Extras.pdb
+02/12/2018  02:17 PM            27,389 GalaSoft.MvvmLight.Extras.XML
+02/12/2018  02:17 PM            95,744 GalaSoft.MvvmLight.pdb
+02/12/2018  02:17 PM           108,878 GalaSoft.MvvmLight.XML
+               6 File(s)        320,075 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLightLibs.5.4.1\lib\SL5
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+02/12/2018  02:17 PM            30,208 GalaSoft.MvvmLight.dll
+02/12/2018  02:17 PM            23,040 GalaSoft.MvvmLight.Extras.dll
+02/12/2018  02:17 PM            44,544 GalaSoft.MvvmLight.Extras.pdb
+02/12/2018  02:17 PM            37,156 GalaSoft.MvvmLight.Extras.xml
+02/12/2018  02:17 PM            95,744 GalaSoft.MvvmLight.pdb
+02/12/2018  02:17 PM           114,536 GalaSoft.MvvmLight.xml
+02/12/2018  02:17 PM            53,856 System.Windows.Interactivity.dll
+               7 File(s)        399,084 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLightLibs.5.4.1\lib\uap10.0
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+02/12/2018  02:17 PM            30,208 GalaSoft.MvvmLight.dll
+02/12/2018  02:17 PM            21,504 GalaSoft.MvvmLight.Extras.dll
+02/12/2018  02:17 PM            36,352 GalaSoft.MvvmLight.Extras.pdb
+02/12/2018  02:17 PM            27,389 GalaSoft.MvvmLight.Extras.xml
+02/12/2018  02:17 PM            95,744 GalaSoft.MvvmLight.pdb
+02/12/2018  02:17 PM            18,944 GalaSoft.MvvmLight.Platform.dll
+02/12/2018  02:17 PM            32,256 GalaSoft.MvvmLight.Platform.pdb
+02/12/2018  02:17 PM               736 GalaSoft.MvvmLight.Platform.pri
+02/12/2018  02:17 PM            13,389 GalaSoft.MvvmLight.Platform.xml
+02/12/2018  02:17 PM           108,878 GalaSoft.MvvmLight.xml
+              10 File(s)        385,400 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLightLibs.5.4.1\lib\windows81
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+02/12/2018  02:17 PM            30,208 GalaSoft.MvvmLight.dll
+02/12/2018  02:17 PM            21,504 GalaSoft.MvvmLight.Extras.dll
+02/12/2018  02:17 PM            36,352 GalaSoft.MvvmLight.Extras.pdb
+02/12/2018  02:17 PM            27,389 GalaSoft.MvvmLight.Extras.xml
+02/12/2018  02:17 PM            95,744 GalaSoft.MvvmLight.pdb
+02/12/2018  02:17 PM            16,384 GalaSoft.MvvmLight.Platform.dll
+02/12/2018  02:17 PM            30,208 GalaSoft.MvvmLight.Platform.pdb
+02/12/2018  02:17 PM             1,248 GalaSoft.MvvmLight.Platform.pri
+02/12/2018  02:17 PM            11,996 GalaSoft.MvvmLight.Platform.xml
+02/12/2018  02:17 PM           108,878 GalaSoft.MvvmLight.xml
+              10 File(s)        379,911 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLightLibs.5.4.1\lib\wp8
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+02/12/2018  02:17 PM            30,208 GalaSoft.MvvmLight.dll
+02/12/2018  02:17 PM            21,504 GalaSoft.MvvmLight.Extras.dll
+02/12/2018  02:17 PM            36,352 GalaSoft.MvvmLight.Extras.pdb
+02/12/2018  02:17 PM            27,389 GalaSoft.MvvmLight.Extras.xml
+02/12/2018  02:17 PM            95,744 GalaSoft.MvvmLight.pdb
+02/12/2018  02:17 PM            16,896 GalaSoft.MvvmLight.Platform.dll
+02/12/2018  02:17 PM            34,304 GalaSoft.MvvmLight.Platform.pdb
+02/12/2018  02:17 PM            24,617 GalaSoft.MvvmLight.Platform.xml
+02/12/2018  02:17 PM           108,878 GalaSoft.MvvmLight.xml
+02/12/2018  02:17 PM            53,872 System.Windows.Interactivity.dll
+              10 File(s)        449,764 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLightLibs.5.4.1\lib\wp81
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+02/12/2018  02:17 PM            30,208 GalaSoft.MvvmLight.dll
+02/12/2018  02:17 PM            21,504 GalaSoft.MvvmLight.Extras.dll
+02/12/2018  02:17 PM            36,352 GalaSoft.MvvmLight.Extras.pdb
+02/12/2018  02:17 PM            27,389 GalaSoft.MvvmLight.Extras.xml
+02/12/2018  02:17 PM            95,744 GalaSoft.MvvmLight.pdb
+02/12/2018  02:17 PM            16,896 GalaSoft.MvvmLight.Platform.dll
+02/12/2018  02:17 PM            34,304 GalaSoft.MvvmLight.Platform.pdb
+02/12/2018  02:17 PM            24,617 GalaSoft.MvvmLight.Platform.xml
+02/12/2018  02:17 PM           108,878 GalaSoft.MvvmLight.xml
+02/12/2018  02:17 PM            53,872 System.Windows.Interactivity.dll
+              10 File(s)        449,764 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLightLibs.5.4.1\lib\wpa81
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+02/12/2018  02:17 PM            30,208 GalaSoft.MvvmLight.dll
+02/12/2018  02:17 PM            21,504 GalaSoft.MvvmLight.Extras.dll
+02/12/2018  02:17 PM            36,352 GalaSoft.MvvmLight.Extras.pdb
+02/12/2018  02:17 PM            27,389 GalaSoft.MvvmLight.Extras.XML
+02/12/2018  02:17 PM            95,744 GalaSoft.MvvmLight.pdb
+02/12/2018  02:17 PM            16,384 GalaSoft.MvvmLight.Platform.dll
+02/12/2018  02:17 PM            30,208 GalaSoft.MvvmLight.Platform.pdb
+02/12/2018  02:17 PM             1,248 GalaSoft.MvvmLight.Platform.pri
+02/12/2018  02:17 PM            11,996 GalaSoft.MvvmLight.Platform.XML
+02/12/2018  02:17 PM           108,878 GalaSoft.MvvmLight.XML
+              10 File(s)        379,911 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\MvvmLightLibs.5.4.1\lib\xamarin.ios10
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+02/12/2018  02:17 PM            30,208 GalaSoft.MvvmLight.dll
+02/12/2018  02:17 PM            21,504 GalaSoft.MvvmLight.Extras.dll
+02/12/2018  02:17 PM            36,352 GalaSoft.MvvmLight.Extras.pdb
+02/12/2018  02:17 PM            27,389 GalaSoft.MvvmLight.Extras.XML
+02/12/2018  02:17 PM            95,744 GalaSoft.MvvmLight.pdb
+02/12/2018  02:17 PM            58,368 GalaSoft.MvvmLight.Platform.dll
+02/12/2018  02:17 PM           149,118 GalaSoft.MvvmLight.Platform.XML
+02/12/2018  02:17 PM           108,878 GalaSoft.MvvmLight.XML
+               8 File(s)        527,561 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.1.0.108.0
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM             3,098 System.Data.SQLite.1.0.108.0.nupkg
+               1 File(s)          3,098 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          build
+03/25/2018  12:47 PM    <DIR>          lib
+03/25/2018  12:47 PM         8,509,232 System.Data.SQLite.Core.1.0.108.0.nupkg
+               1 File(s)      8,509,232 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          net20
+03/25/2018  12:47 PM    <DIR>          net40
+03/25/2018  12:47 PM    <DIR>          net45
+03/25/2018  12:47 PM    <DIR>          net451
+03/25/2018  12:47 PM    <DIR>          net46
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build\net20
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM             5,857 System.Data.SQLite.Core.targets
+03/25/2018  12:47 PM    <DIR>          x64
+03/25/2018  12:47 PM    <DIR>          x86
+               1 File(s)          5,857 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build\net20\x64
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM         1,557,504 SQLite.Interop.dll
+               1 File(s)      1,557,504 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build\net20\x86
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM         1,094,144 SQLite.Interop.dll
+               1 File(s)      1,094,144 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build\net40
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM             5,857 System.Data.SQLite.Core.targets
+03/25/2018  12:47 PM    <DIR>          x64
+03/25/2018  12:47 PM    <DIR>          x86
+               1 File(s)          5,857 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build\net40\x64
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM         1,534,464 SQLite.Interop.dll
+               1 File(s)      1,534,464 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build\net40\x86
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM         1,149,440 SQLite.Interop.dll
+               1 File(s)      1,149,440 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build\net45
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM             5,857 System.Data.SQLite.Core.targets
+03/25/2018  12:47 PM    <DIR>          x64
+03/25/2018  12:47 PM    <DIR>          x86
+               1 File(s)          5,857 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build\net45\x64
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM         1,548,800 SQLite.Interop.dll
+               1 File(s)      1,548,800 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build\net45\x86
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM         1,253,376 SQLite.Interop.dll
+               1 File(s)      1,253,376 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build\net451
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM             5,857 System.Data.SQLite.Core.targets
+03/25/2018  12:47 PM    <DIR>          x64
+03/25/2018  12:47 PM    <DIR>          x86
+               1 File(s)          5,857 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build\net451\x64
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM         1,545,728 SQLite.Interop.dll
+               1 File(s)      1,545,728 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build\net451\x86
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM         1,238,016 SQLite.Interop.dll
+               1 File(s)      1,238,016 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build\net46
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM             5,857 System.Data.SQLite.Core.targets
+03/25/2018  12:47 PM    <DIR>          x64
+03/25/2018  12:47 PM    <DIR>          x86
+               1 File(s)          5,857 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build\net46\x64
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM         1,543,168 SQLite.Interop.dll
+               1 File(s)      1,543,168 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\build\net46\x86
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM         1,209,856 SQLite.Interop.dll
+               1 File(s)      1,209,856 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\lib
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          net20
+03/25/2018  12:47 PM    <DIR>          net40
+03/25/2018  12:47 PM    <DIR>          net45
+03/25/2018  12:47 PM    <DIR>          net451
+03/25/2018  12:47 PM    <DIR>          net46
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\lib\net20
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM           364,544 System.Data.SQLite.dll
+03/02/2018  08:51 AM               671 System.Data.SQLite.dll.config
+03/02/2018  08:51 AM         1,051,056 System.Data.SQLite.xml
+               3 File(s)      1,416,271 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\lib\net40
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM           353,280 System.Data.SQLite.dll
+03/02/2018  08:51 AM               671 System.Data.SQLite.dll.config
+03/02/2018  08:51 AM         1,051,056 System.Data.SQLite.xml
+               3 File(s)      1,405,007 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\lib\net45
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM           353,280 System.Data.SQLite.dll
+03/02/2018  08:51 AM               671 System.Data.SQLite.dll.config
+03/02/2018  08:51 AM         1,051,056 System.Data.SQLite.xml
+               3 File(s)      1,405,007 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\lib\net451
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM           353,280 System.Data.SQLite.dll
+03/02/2018  08:51 AM               671 System.Data.SQLite.dll.config
+03/02/2018  08:51 AM         1,051,056 System.Data.SQLite.xml
+               3 File(s)      1,405,007 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Core.1.0.108.0\lib\net46
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM           345,600 System.Data.SQLite.dll
+03/02/2018  08:51 AM               671 System.Data.SQLite.dll.config
+03/02/2018  08:51 AM         1,052,597 System.Data.SQLite.xml
+               3 File(s)      1,398,868 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          content
+03/25/2018  12:47 PM    <DIR>          lib
+03/25/2018  12:47 PM           191,319 System.Data.SQLite.EF6.1.0.108.0.nupkg
+03/25/2018  12:47 PM    <DIR>          tools
+               1 File(s)        191,319 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0\content
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          net40
+03/25/2018  12:47 PM    <DIR>          net45
+03/25/2018  12:47 PM    <DIR>          net451
+03/25/2018  12:47 PM    <DIR>          net46
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0\content\net40
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM               568 app.config.install.xdt
+03/02/2018  08:51 AM               464 app.config.transform
+03/02/2018  08:51 AM               568 web.config.install.xdt
+03/02/2018  08:51 AM               464 web.config.transform
+               4 File(s)          2,064 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0\content\net45
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM               568 app.config.install.xdt
+03/02/2018  08:51 AM               464 app.config.transform
+03/02/2018  08:51 AM               568 web.config.install.xdt
+03/02/2018  08:51 AM               464 web.config.transform
+               4 File(s)          2,064 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0\content\net451
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM               568 app.config.install.xdt
+03/02/2018  08:51 AM               464 app.config.transform
+03/02/2018  08:51 AM               568 web.config.install.xdt
+03/02/2018  08:51 AM               464 web.config.transform
+               4 File(s)          2,064 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0\content\net46
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM               568 app.config.install.xdt
+03/02/2018  08:51 AM               464 app.config.transform
+03/02/2018  08:51 AM               568 web.config.install.xdt
+03/02/2018  08:51 AM               464 web.config.transform
+               4 File(s)          2,064 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0\lib
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          net40
+03/25/2018  12:47 PM    <DIR>          net45
+03/25/2018  12:47 PM    <DIR>          net451
+03/25/2018  12:47 PM    <DIR>          net46
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0\lib\net40
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM           186,880 System.Data.SQLite.EF6.dll
+               1 File(s)        186,880 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0\lib\net45
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM           186,880 System.Data.SQLite.EF6.dll
+               1 File(s)        186,880 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0\lib\net451
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM           186,880 System.Data.SQLite.EF6.dll
+               1 File(s)        186,880 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0\lib\net46
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM           184,832 System.Data.SQLite.EF6.dll
+               1 File(s)        184,832 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0\tools
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          net40
+03/25/2018  12:47 PM    <DIR>          net45
+03/25/2018  12:47 PM    <DIR>          net451
+03/25/2018  12:47 PM    <DIR>          net46
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0\tools\net40
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM               462 install.ps1
+               1 File(s)            462 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0\tools\net45
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM               462 install.ps1
+               1 File(s)            462 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0\tools\net451
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM               462 install.ps1
+               1 File(s)            462 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.EF6.1.0.108.0\tools\net46
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM               462 install.ps1
+               1 File(s)            462 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Linq.1.0.108.0
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          content
+03/25/2018  12:47 PM    <DIR>          lib
+03/25/2018  12:47 PM           232,130 System.Data.SQLite.Linq.1.0.108.0.nupkg
+               1 File(s)        232,130 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Linq.1.0.108.0\content
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          net20
+03/25/2018  12:47 PM    <DIR>          net40
+03/25/2018  12:47 PM    <DIR>          net45
+03/25/2018  12:47 PM    <DIR>          net451
+03/25/2018  12:47 PM    <DIR>          net46
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Linq.1.0.108.0\content\net20
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM               398 app.config.transform
+03/02/2018  08:51 AM               398 web.config.transform
+               2 File(s)            796 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Linq.1.0.108.0\content\net40
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM               398 app.config.transform
+03/02/2018  08:51 AM               398 web.config.transform
+               2 File(s)            796 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Linq.1.0.108.0\content\net45
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM               398 app.config.transform
+03/02/2018  08:51 AM               398 web.config.transform
+               2 File(s)            796 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Linq.1.0.108.0\content\net451
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM               398 app.config.transform
+03/02/2018  08:51 AM               398 web.config.transform
+               2 File(s)            796 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Linq.1.0.108.0\content\net46
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM               398 app.config.transform
+03/02/2018  08:51 AM               398 web.config.transform
+               2 File(s)            796 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Linq.1.0.108.0\lib
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          net20
+03/25/2018  12:47 PM    <DIR>          net40
+03/25/2018  12:47 PM    <DIR>          net45
+03/25/2018  12:47 PM    <DIR>          net451
+03/25/2018  12:47 PM    <DIR>          net46
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Linq.1.0.108.0\lib\net20
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM           196,608 System.Data.SQLite.Linq.dll
+               1 File(s)        196,608 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Linq.1.0.108.0\lib\net40
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM           186,880 System.Data.SQLite.Linq.dll
+               1 File(s)        186,880 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Linq.1.0.108.0\lib\net45
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM           186,880 System.Data.SQLite.Linq.dll
+               1 File(s)        186,880 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Linq.1.0.108.0\lib\net451
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM           186,880 System.Data.SQLite.Linq.dll
+               1 File(s)        186,880 bytes
+
+ Directory of C:\Projects\Working\TDT0325\packages\System.Data.SQLite.Linq.1.0.108.0\lib\net46
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/02/2018  08:51 AM           184,832 System.Data.SQLite.Linq.dll
+               1 File(s)        184,832 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Properties
+
+06/04/2018  03:41 PM    <DIR>          .
+06/04/2018  03:41 PM    <DIR>          ..
+03/25/2018  10:39 AM             3,406 app.manifest
+06/04/2018  12:54 PM             2,472 AssemblyInfo.cs
+03/25/2018  10:39 AM             2,842 Resources.Designer.cs
+03/25/2018  10:39 AM             5,612 Resources.resx
+06/04/2018  03:41 PM             1,467 Settings.Designer.cs
+06/04/2018  03:41 PM               433 Settings.settings
+               6 File(s)         16,232 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Reports
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM    <DIR>          Other
+03/25/2018  10:39 AM            31,362 Projects.rdlc
+03/25/2018  10:39 AM            20,798 Report4.rdlc
+03/25/2018  10:39 AM            36,850 ReportTest1.rdlc
+03/25/2018  10:39 AM            30,764 ReptNewOne.rdlc
+03/25/2018  10:39 AM            27,786 ToDos.rdlc
+03/25/2018  10:39 AM            23,205 Tracks.rdlc
+               6 File(s)        170,765 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Reports\Other
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM            21,189 ProjectRept.rdlc
+03/25/2018  10:39 AM            20,734 Report1.rdlc
+03/25/2018  10:39 AM            20,204 ReportFolders.rdlc
+03/25/2018  10:39 AM            37,239 ReportProjects.rdlc
+03/25/2018  10:39 AM            25,176 ReportProjectsShort - Copy.rdlc
+03/25/2018  10:39 AM            25,176 ReportProjectsShort.rdlc
+03/25/2018  10:39 AM            22,025 ReportProjNew.rdlc
+03/25/2018  10:39 AM               249 Reports.session
+03/25/2018  10:39 AM            56,653 ReportTracks.rdlc
+               9 File(s)        228,645 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Resources
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM               318 B_CLOSED.ICO
+03/25/2018  10:39 AM               318 B_OPEN.ICO
+03/25/2018  10:39 AM            40,496 Dictionary1.xaml
+03/25/2018  10:39 AM             1,406 folder.ico
+03/25/2018  10:39 AM             1,662 folderopen.ico
+03/25/2018  10:39 AM               318 P_other.ico
+03/25/2018  10:39 AM               318 P_reg.ico
+03/25/2018  10:39 AM               318 S_other.ico
+03/25/2018  10:39 AM               318 S_reg.ico
+03/25/2018  10:39 AM             7,657 TreeResources.xaml
+03/25/2018  10:39 AM               318 T_other.ico
+03/25/2018  10:39 AM               318 T_reg.ico
+              12 File(s)         53,765 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Support
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM             1,460 EditRow.cs
+03/25/2018  10:39 AM             1,839 HourGlass.xaml
+03/25/2018  10:39 AM               468 HourGlass.xaml.cs
+03/25/2018  10:39 AM             1,491 RoutedEventTrigger.cs
+03/25/2018  10:39 AM             2,793 Throbber.xaml
+03/25/2018  10:39 AM             1,147 Throbber.xaml.cs
+               6 File(s)          9,198 bytes
+
+ Directory of C:\Projects\Working\TDT0325\SupportFiles
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM            65,536 BillWork.db
+03/25/2018  10:39 AM           274,432 BillWork0.db
+03/25/2018  10:39 AM             2,048 BillWorkDBonly.db
+               3 File(s)        342,016 bytes
+
+ Directory of C:\Projects\Working\TDT0325\ViewModel
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM               968 MainViewModel.cs
+03/25/2018  10:39 AM             1,846 ViewModelLocator.cs
+               2 File(s)          2,814 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM    <DIR>          DBProjects
+04/17/2018  07:03 AM    <DIR>          Helpers
+03/25/2018  10:39 AM    <DIR>          Main
+05/04/2018  04:00 PM    <DIR>          Plans
+03/25/2018  10:39 AM    <DIR>          Plans2
+03/25/2018  10:39 AM    <DIR>          Projects
+03/25/2018  04:11 PM    <DIR>          Reports
+06/01/2018  11:02 AM    <DIR>          Shell
+05/29/2018  10:37 AM    <DIR>          ToDos
+04/16/2018  03:47 PM    <DIR>          Tracks
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\DBProjects
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM             7,581 DBProjectView - Copy.xaml
+03/25/2018  10:39 AM             9,278 DBProjectView.xaml
+03/25/2018  10:39 AM             1,031 DBProjectView.xaml - Copy.cs
+03/25/2018  10:39 AM             4,882 DBProjectView.xaml.cs
+03/25/2018  10:39 AM               460 DBTypes.cs
+03/25/2018  10:39 AM             4,656 TopViewModel.cs
+03/25/2018  10:39 AM               522 TVItem.cs
+03/25/2018  10:39 AM             4,153 TVItemViewModel.cs
+               8 File(s)         32,563 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Helpers
+
+04/17/2018  07:03 AM    <DIR>          .
+04/17/2018  07:03 AM    <DIR>          ..
+03/25/2018  10:39 AM             1,088 CommandVM.cs
+04/17/2018  07:03 AM            12,144 CrudVMBaseTDT.cs
+03/25/2018  10:39 AM             1,481 ReportVM.cs
+04/16/2018  12:50 PM             9,734 ViewVM.cs
+03/25/2018  10:39 AM            12,949 VisualHelper.cs
+03/25/2018  10:39 AM               932 VMBase.cs
+               6 File(s)         38,328 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Main
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM             1,756 MainViewModel.cs
+03/25/2018  10:39 AM             1,227 MainWindow.xaml
+03/25/2018  10:39 AM               488 MainWindow.xaml.cs
+               3 File(s)          3,471 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Plans
+
+05/04/2018  04:00 PM    <DIR>          .
+05/04/2018  04:00 PM    <DIR>          ..
+04/20/2018  10:33 AM             1,258 ADialog.xaml
+04/20/2018  10:34 AM               761 ADialog.xaml.cs
+04/20/2018  09:00 AM             3,848 ContextAssist.cs
+04/12/2018  03:32 PM             2,206 dbFolderViewModel.cs
+04/13/2018  09:46 AM             3,152 dbProjectViewModel.cs
+04/12/2018  03:32 PM               868 dbSubTaskViewModel.cs
+04/12/2018  03:32 PM             2,946 dbTaskViewModel.cs
+03/25/2018  10:39 AM             1,532 InputDialog.xaml
+03/25/2018  10:39 AM             1,032 InputDialog.xaml.cs
+03/25/2018  10:39 AM             1,678 PlanDetails.cs
+04/14/2018  09:10 AM            38,269 PlansDnD.cs
+03/25/2018  10:39 AM             5,897 PlansTree.cs
+03/26/2018  03:29 PM            28,663 PlansView.xaml
+05/04/2018  04:00 PM            35,202 PlansView.xaml.cs
+04/20/2018  10:37 AM            63,512 PlansViewModel.cs
+03/25/2018  10:39 AM            17,958 PlansVMpartial.cs
+03/25/2018  10:39 AM             1,959 ProjectVM.cs
+04/20/2018  09:00 AM             1,558 ShutDownDialog.xaml
+04/20/2018  08:43 AM             1,053 ShutDownDialog.xaml.cs
+03/31/2018  07:11 AM             5,990 TreeViewItemViewModel.cs
+04/20/2018  09:10 AM            25,835 TVEdits.cs
+              21 File(s)        245,177 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Plans2
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM            27,641 Plans2DnD - Copy.cs
+03/25/2018  10:39 AM            33,591 Plans2DnD.cs
+03/25/2018  10:39 AM            12,009 Plans2View.xaml
+03/25/2018  10:39 AM            28,130 Plans2View.xaml.cs
+03/25/2018  10:39 AM            14,818 Plans2ViewModel - Copy.cs
+03/25/2018  10:39 AM            15,406 Plans2ViewModel.cs
+03/25/2018  10:39 AM            14,783 TV2Edits.cs
+               7 File(s)        146,378 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Projects
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM             3,660 CountryViewModel.cs
+03/25/2018  10:39 AM             1,038 FolderViewModel.cs
+03/25/2018  10:39 AM             1,140 InputDialog.xaml
+03/25/2018  10:39 AM               604 InputDialog.xaml.cs
+03/25/2018  10:39 AM            10,067 ProjectView.xaml
+03/25/2018  10:39 AM             1,246 ProjectView.xaml.cs
+03/25/2018  10:39 AM               855 ProjectViewModel.cs
+03/25/2018  10:39 AM               538 SubTaskViewModel.cs
+03/25/2018  10:39 AM               774 TaskViewModel.cs
+03/25/2018  10:39 AM             6,333 xTreeViewItemViewModel.cs
+              10 File(s)         26,255 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Reports
+
+03/25/2018  04:11 PM    <DIR>          .
+03/25/2018  04:11 PM    <DIR>          ..
+03/25/2018  04:11 PM             3,849 ReportObjects.cs
+03/25/2018  10:39 AM             4,515 ReportsView - Copy.xaml
+03/25/2018  10:39 AM             4,792 ReportsView.xaml
+03/25/2018  10:39 AM             4,728 ReportsView.xaml - Copy.cs
+03/25/2018  10:39 AM             4,390 ReportsView.xaml.cs
+03/25/2018  10:39 AM             9,010 ReportsViewModel.cs
+03/25/2018  10:39 AM            19,101 ReportTracks.rdlc
+03/25/2018  10:39 AM               883 ReportViewer.xaml
+03/25/2018  10:39 AM             2,103 ReportViewer.xaml.cs
+03/25/2018  10:39 AM               542 ShowReport.xaml
+03/25/2018  10:39 AM               625 ShowReport.xaml.cs
+              11 File(s)         54,538 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Shell
+
+06/01/2018  11:02 AM    <DIR>          .
+06/01/2018  11:02 AM    <DIR>          ..
+04/10/2018  09:14 AM             2,230 ShellView.xaml
+06/01/2018  11:02 AM             9,233 ShellView.xaml.cs
+04/23/2018  08:44 AM             1,405 ShellViewModel.cs
+               3 File(s)         12,868 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\ToDos
+
+05/29/2018  10:37 AM    <DIR>          .
+05/29/2018  10:37 AM    <DIR>          ..
+03/25/2018  10:39 AM             4,582 DoneToBackgroundConverter.cs
+05/29/2018  10:37 AM            45,367 ToDosView.xaml
+03/25/2018  10:39 AM             3,906 ToDosView.xaml.cs
+05/07/2018  09:31 AM            58,387 ToDosViewModel.cs
+03/25/2018  10:39 AM             1,319 ToDoVM.cs
+               5 File(s)        113,561 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Tracks
+
+04/16/2018  03:47 PM    <DIR>          .
+04/16/2018  03:47 PM    <DIR>          ..
+03/25/2018  10:39 AM            33,014 TracksView.xaml
+03/25/2018  10:39 AM             1,940 TracksView.xaml.cs
+04/16/2018  03:47 PM            13,963 TracksViewModel.cs
+03/25/2018  10:39 AM               529 TrackVM.cs
+               4 File(s)         49,446 bytes
+
+ Directory of C:\Projects\Working\TDT0325\x64
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM         1,543,168 SQLite.Interop.dll
+               1 File(s)      1,543,168 bytes
+
+ Directory of C:\Projects\Working\TDT0325\x86
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM         1,209,856 SQLite.Interop.dll
+               1 File(s)      1,209,856 bytes
+
+     Total Files Listed:
+             844 File(s)    168,563,728 bytes
+             857 Dir(s)  670,900,174,848 bytes free

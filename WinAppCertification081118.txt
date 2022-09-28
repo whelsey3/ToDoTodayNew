@@ -1,0 +1,48 @@
+pp manifest resources tests
+============================================
+PASSED
+App resources
+
+FAILED
+Branding
+Error Found: The branding validation test encountered the following errors:
+Image file StoreLogo.png is a default image.
+Image file Square44x44Logo.scale-200.png is a default image.
+Image file Square44x44Logo.targetsize-24_altform-unplated.png is a default image.
+Image file Square150x150Logo.scale-200.png is a default image.
+Image file Wide310x150Logo.scale-200.png is a default image.
+Impact if not fixed: Microsoft Store apps are expected to be complete and fully functional. Apps using the default images e.g. from templates or SDK samples present a poor user experience and cannot be easily identified in the store catalog. 
+How to fix: Replace default images with something more distinct and representative of your app.
+=====================================================================
+Debug configuration test
+
+FAILED
+Debug configuration
+Error Found: The debug configuration test detected the following errors:
+The binary SQLite.CodeFirst.dll is built in debug mode.
+The binary LoggerLib.dll is built in debug mode.
+The binary BuildSqliteCF.dll is built in debug mode.
+Impact if not fixed: Microsoft Store doesn’t allow a debug version of an app. 
+How to fix: Please make sure the app isn’t linking to any debug versions of a framework and it is built with release configuration with optimization enabled. If this is a managed app please make sure you have installed the correct version of .NET framework. 
+=================================================================
+Package sanity test
+
+PASSED
+Archive files usage
+
+FAILED
+Blocked executables
+Error Found: The blocked executables test has detected the following errors:
+File ToDoTodayNoCF\Microsoft.Expression.Interactions.dll contains a reference to a "Launch Process" related API System.Diagnostics.Process.Start
+File ToDoTodayNoCF\Microsoft.ReportViewer.WinForms.dll contains a reference to a "Launch Process" related API System.Diagnostics.Process.Start
+File EntityFramework.dll contains a blocked executable reference to "reg".
+File EntityFramework.dll contains a blocked executable reference to "cmd".
+File EntityFramework.SqlServer.dll contains a blocked executable reference to "reg".
+File Microsoft.ReportViewer.Common.dll contains a blocked executable reference to "cmd".
+File Microsoft.ReportViewer.Common.dll contains a blocked executable reference to "reg".
+File System.Data.SQLite.dll contains a blocked executable reference to "cmd".
+File Xceed.Wpf.AvalonDock.resources.dll contains a blocked executable reference to "reg".
+Impact if not fixed: Launching executable files is restricted on Windows 10 S systems. Apps that rely on this capability might not run correctly on Windows 10 S systems. 
+How to fix: Identify which of the flagged entries represent a call to launch an executable file that is not part of your app and remove those calls. If the flagged files are part of your application, you may ignore the warning. 
+
+file:///C:/Users/be3so/AppData/Local/Microsoft/AppCertKit/ValidationResult.htm

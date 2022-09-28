@@ -1,0 +1,463 @@
+ Volume in drive C is Windows
+ Volume Serial Number is D2B8-5833
+
+ Directory of C:\Projects\Working\TDT0325
+
+06/25/2018  03:11 PM    <DIR>          .
+06/25/2018  03:11 PM    <DIR>          ..
+03/25/2018  10:39 AM             2,581 .gitattributes
+03/25/2018  10:39 AM             4,565 .gitignore
+03/25/2018  10:39 AM             3,242 App - Copy.config
+06/04/2018  03:41 PM             4,236 App.config
+03/25/2018  10:39 AM             1,354 App.xaml
+04/19/2018  09:50 AM             8,172 App.xaml.cs
+03/25/2018  10:39 AM            65,536 BillWork.db
+06/01/2018  04:30 PM    <DIR>          bin
+03/25/2018  10:39 AM    <DIR>          Converters
+03/25/2018  10:39 AM             1,975 DatabaseContext.cs
+06/25/2018  03:11 PM                 0 dir.txt
+05/09/2018  08:58 AM               666 icons8-to-do-48.png
+03/25/2018  10:39 AM    <DIR>          Images
+03/25/2018  10:39 AM               505 MainWindow.xaml
+03/25/2018  10:39 AM               661 MainWindow.xaml.cs
+04/09/2018  11:12 AM    <DIR>          Messages
+03/25/2018  10:39 AM    <DIR>          Model
+05/10/2018  03:56 PM    <DIR>          obj
+03/25/2018  12:47 PM    <DIR>          packages
+03/25/2018  10:39 AM               882 packages.config
+06/04/2018  03:41 PM    <DIR>          Properties
+03/25/2018  10:39 AM    <DIR>          Reports
+03/25/2018  10:39 AM    <DIR>          Resources
+05/10/2018  10:04 AM             6,659 SetUpData.cs
+03/25/2018  10:39 AM               724 SQLiteConfiguration.cs
+03/25/2018  10:39 AM    <DIR>          Support
+03/25/2018  10:39 AM    <DIR>          SupportFiles
+05/07/2018  09:44 AM            53,248 TDTDb.sqlite
+03/25/2018  10:39 AM            45,056 TDTDb0325b.sqlite
+05/10/2018  09:13 AM             7,358 toDo.ico
+03/25/2018  10:39 AM            13,430 TODOTODAY.ICO
+05/01/2018  11:15 AM             3,293 TODOTODAY.png
+05/30/2018  04:12 PM             4,996 ToDoTodayNew.sln
+06/04/2018  03:54 PM            22,746 ToDoTodayNoCF.csproj
+04/22/2018  12:39 PM               627 ToDoTodayNoCF.csproj.user
+03/25/2018  10:39 AM             1,676 ToDoToday_TemporaryKey.pfx
+04/30/2018  08:56 AM             3,227 undoChanges.cs
+05/22/2018  03:37 PM            33,222 UpgradeLog.htm
+03/25/2018  10:39 AM             2,589 Util.cs
+03/25/2018  10:39 AM    <DIR>          ViewModel
+03/25/2018  10:39 AM    <DIR>          Views
+03/25/2018  10:39 AM    <DIR>          x64
+03/25/2018  10:39 AM    <DIR>          x86
+              27 File(s)        293,226 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin
+
+06/01/2018  04:30 PM    <DIR>          .
+06/01/2018  04:30 PM    <DIR>          ..
+06/25/2018  11:18 AM    <DIR>          Debug
+05/10/2018  03:56 PM    <DIR>          Release
+06/01/2018  04:29 PM        20,011,159 ToDoTodayNoCF.zip
+               1 File(s)     20,011,159 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug
+
+06/25/2018  11:18 AM    <DIR>          .
+06/25/2018  11:18 AM    <DIR>          ..
+06/25/2018  11:18 AM    <DIR>          app.publish
+05/31/2018  03:50 PM            30,720 BuildSqliteCF.dll
+05/31/2018  03:50 PM            99,840 BuildSqliteCF.pdb
+03/02/2018  01:07 PM            10,240 CommonServiceLocator.dll
+06/25/2018  10:50 AM    <DIR>          de
+06/25/2018  10:50 AM    <DIR>          en
+10/23/2017  01:15 PM         5,225,168 EntityFramework.dll
+10/23/2017  01:15 PM           622,288 EntityFramework.SqlServer.dll
+10/23/2017  01:15 PM           158,388 EntityFramework.SqlServer.xml
+10/23/2017  01:15 PM         3,680,079 EntityFramework.xml
+06/25/2018  10:50 AM    <DIR>          es
+06/25/2018  10:50 AM    <DIR>          fr
+02/12/2018  02:17 PM            30,208 GalaSoft.MvvmLight.dll
+02/12/2018  02:17 PM            21,504 GalaSoft.MvvmLight.Extras.dll
+02/12/2018  02:17 PM            36,352 GalaSoft.MvvmLight.Extras.pdb
+02/12/2018  02:17 PM            27,389 GalaSoft.MvvmLight.Extras.xml
+02/12/2018  02:17 PM            95,744 GalaSoft.MvvmLight.pdb
+02/12/2018  02:17 PM            13,824 GalaSoft.MvvmLight.Platform.dll
+02/12/2018  02:17 PM            32,256 GalaSoft.MvvmLight.Platform.pdb
+02/12/2018  02:17 PM            21,236 GalaSoft.MvvmLight.Platform.xml
+02/12/2018  02:17 PM           108,878 GalaSoft.MvvmLight.xml
+06/01/2018  11:01 AM            68,096 GongSolutions.Wpf.DragDrop.dll
+01/18/2017  12:20 AM            66,048 GongSolutions.Wpf.DragDrop.dll.unsigned
+06/01/2018  11:01 AM           120,320 GongSolutions.Wpf.DragDrop.pdb
+01/18/2017  12:20 AM            65,303 GongSolutions.Wpf.DragDrop.xml
+06/25/2018  10:50 AM    <DIR>          hu
+06/25/2018  10:50 AM    <DIR>          it
+06/25/2018  10:50 AM    <DIR>          ja
+06/25/2018  10:50 AM    <DIR>          ko
+05/31/2018  03:45 PM             6,144 LoggerLib.dll
+05/31/2018  03:45 PM            15,872 LoggerLib.pdb
+02/18/2013  03:30 PM           144,496 Microsoft.Expression.Drawing.dll
+02/18/2013  03:30 PM           108,168 Microsoft.Expression.Interactions.dll
+05/14/2018  10:28 PM         9,310,400 Microsoft.ReportViewer.Common.dll
+05/14/2018  10:28 PM           622,792 Microsoft.ReportViewer.WinForms.dll
+04/30/2016  09:11 AM           396,992 Microsoft.SqlServer.Types.dll
+06/25/2018  10:50 AM    <DIR>          pt
+06/25/2018  10:50 AM    <DIR>          pt-BR
+06/25/2018  10:50 AM    <DIR>          ro
+06/25/2018  10:50 AM    <DIR>          ru
+05/25/2018  08:34 AM            48,128 SQLite.CodeFirst.dll
+05/25/2018  08:34 AM           151,040 SQLite.CodeFirst.pdb
+06/25/2018  10:50 AM    <DIR>          sv
+03/02/2018  08:51 AM           345,600 System.Data.SQLite.dll
+03/02/2018  08:51 AM               671 System.Data.SQLite.dll.config
+03/02/2018  08:51 AM           184,832 System.Data.SQLite.EF6.dll
+03/02/2018  08:51 AM           184,832 System.Data.SQLite.Linq.dll
+03/02/2018  08:51 AM         1,052,597 System.Data.SQLite.xml
+02/12/2018  02:17 PM            55,904 System.Windows.Interactivity.dll
+06/25/2018  11:18 AM             2,211 T3.application
+06/25/2018  11:16 AM           402,944 T3.exe
+06/04/2018  03:41 PM             4,236 T3.exe.config
+06/25/2018  11:18 AM            54,183 T3.exe.manifest
+06/25/2018  11:16 AM           335,360 T3.pdb
+05/21/2018  08:59 AM             2,211 T3.vshost.application
+05/22/2018  03:37 PM            22,688 T3.vshost.exe
+03/25/2018  10:39 AM             4,236 T3.vshost.exe.config
+05/21/2018  08:59 AM            54,013 T3.vshost.exe.manifest
+05/07/2018  09:44 AM            53,248 TDTDb.sqlite
+06/25/2018  10:50 AM    <DIR>          x64
+06/25/2018  10:50 AM    <DIR>          x86
+03/05/2018  12:10 PM           423,936 Xceed.Wpf.AvalonDock.dll
+03/05/2018  12:10 PM            87,040 Xceed.Wpf.AvalonDock.Themes.Aero.dll
+03/05/2018  12:10 PM            79,360 Xceed.Wpf.AvalonDock.Themes.Metro.dll
+03/05/2018  12:10 PM            83,968 Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+03/05/2018  12:10 PM         2,435,072 Xceed.Wpf.DataGrid.dll
+03/05/2018  12:10 PM         1,093,120 Xceed.Wpf.Toolkit.dll
+06/25/2018  10:50 AM    <DIR>          zh-Hans
+06/25/2018  10:50 AM    <DIR>          zh-Hant
+              51 File(s)     28,300,175 bytes
+
+ Directory of C:\Projects\Working\TDT0325\bin\Debug\app.publish
+
+06/25/2018  11:18 AM    <DIR>          .
+06/25/2018  11:18 AM    <DIR>          ..
+06/25/2018  11:18 AM           403,904 T3.exe
+               1 File(s)        403,904 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Converters
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM               936 BindingErrorEventArgsConverter.cs
+03/25/2018  10:39 AM             1,089 BindingSourcePropertyConverter.cs
+03/25/2018  10:39 AM             1,102 EnumToBoolConverter.cs
+03/25/2018  10:39 AM             1,203 ErrorCollectionConverter.cs
+               4 File(s)          4,330 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Images
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM               502 Add.png
+03/25/2018  10:39 AM               874 Folder.png
+03/25/2018  10:39 AM               813 Home.png
+03/25/2018  10:39 AM               977 MoveTDT.png
+03/25/2018  10:39 AM               977 Project.png
+03/25/2018  10:39 AM               842 Remove.png
+03/25/2018  10:39 AM               874 SubTask.png
+03/25/2018  10:39 AM               946 Task.png
+03/25/2018  10:39 AM            14,848 Thumbs.db
+               9 File(s)         21,653 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Messages
+
+04/09/2018  11:12 AM    <DIR>          .
+04/09/2018  11:12 AM    <DIR>          ..
+03/25/2018  10:39 AM               460 CommandMessage.cs
+03/25/2018  10:39 AM               580 InEdit.cs
+04/09/2018  11:12 AM             1,069 NavigateMessage.cs
+03/25/2018  10:39 AM               240 UserMessage.cs
+               4 File(s)          2,349 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Model
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM               253 DataItem.cs
+03/25/2018  10:39 AM               354 DataService.cs
+03/25/2018  10:39 AM               230 IDataService.cs
+               3 File(s)            837 bytes
+
+ 
+ Directory of C:\Projects\Working\TDT0325\packages
+
+03/25/2018  12:47 PM    <DIR>          .
+03/25/2018  12:47 PM    <DIR>          ..
+03/25/2018  12:47 PM    <DIR>          CommonServiceLocator.2.0.3
+03/25/2018  12:47 PM    <DIR>          EntityFramework.6.2.0
+03/25/2018  12:47 PM    <DIR>          Extended.Wpf.Toolkit.3.3.0
+03/25/2018  12:47 PM    <DIR>          gong-wpf-dragdrop.1.1.0
+03/25/2018  12:47 PM    <DIR>          MvvmLight.5.4.1
+03/25/2018  12:47 PM    <DIR>          MvvmLightLibs.5.4.1
+03/25/2018  12:47 PM    <DIR>          System.Data.SQLite.1.0.108.0
+03/25/2018  12:47 PM    <DIR>          System.Data.SQLite.Core.1.0.108.0
+03/25/2018  12:47 PM    <DIR>          System.Data.SQLite.EF6.1.0.108.0
+03/25/2018  12:47 PM    <DIR>          System.Data.SQLite.Linq.1.0.108.0
+               0 File(s)              0 bytes
+
+ 
+ Directory of C:\Projects\Working\TDT0325\Properties
+
+06/04/2018  03:41 PM    <DIR>          .
+06/04/2018  03:41 PM    <DIR>          ..
+03/25/2018  10:39 AM             3,406 app.manifest
+06/04/2018  12:54 PM             2,472 AssemblyInfo.cs
+03/25/2018  10:39 AM             2,842 Resources.Designer.cs
+03/25/2018  10:39 AM             5,612 Resources.resx
+06/04/2018  03:41 PM             1,467 Settings.Designer.cs
+06/04/2018  03:41 PM               433 Settings.settings
+               6 File(s)         16,232 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Reports
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM    <DIR>          Other
+03/25/2018  10:39 AM            31,362 Projects.rdlc
+03/25/2018  10:39 AM            20,798 Report4.rdlc
+03/25/2018  10:39 AM            36,850 ReportTest1.rdlc
+03/25/2018  10:39 AM            30,764 ReptNewOne.rdlc
+03/25/2018  10:39 AM            27,786 ToDos.rdlc
+03/25/2018  10:39 AM            23,205 Tracks.rdlc
+               6 File(s)        170,765 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Reports\Other
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM            21,189 ProjectRept.rdlc
+03/25/2018  10:39 AM            20,734 Report1.rdlc
+03/25/2018  10:39 AM            20,204 ReportFolders.rdlc
+03/25/2018  10:39 AM            37,239 ReportProjects.rdlc
+03/25/2018  10:39 AM            25,176 ReportProjectsShort - Copy.rdlc
+03/25/2018  10:39 AM            25,176 ReportProjectsShort.rdlc
+03/25/2018  10:39 AM            22,025 ReportProjNew.rdlc
+03/25/2018  10:39 AM               249 Reports.session
+03/25/2018  10:39 AM            56,653 ReportTracks.rdlc
+               9 File(s)        228,645 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Resources
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM               318 B_CLOSED.ICO
+03/25/2018  10:39 AM               318 B_OPEN.ICO
+03/25/2018  10:39 AM            40,496 Dictionary1.xaml
+03/25/2018  10:39 AM             1,406 folder.ico
+03/25/2018  10:39 AM             1,662 folderopen.ico
+03/25/2018  10:39 AM               318 P_other.ico
+03/25/2018  10:39 AM               318 P_reg.ico
+03/25/2018  10:39 AM               318 S_other.ico
+03/25/2018  10:39 AM               318 S_reg.ico
+03/25/2018  10:39 AM             7,657 TreeResources.xaml
+03/25/2018  10:39 AM               318 T_other.ico
+03/25/2018  10:39 AM               318 T_reg.ico
+              12 File(s)         53,765 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Support
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM             1,460 EditRow.cs
+03/25/2018  10:39 AM             1,839 HourGlass.xaml
+03/25/2018  10:39 AM               468 HourGlass.xaml.cs
+03/25/2018  10:39 AM             1,491 RoutedEventTrigger.cs
+03/25/2018  10:39 AM             2,793 Throbber.xaml
+03/25/2018  10:39 AM             1,147 Throbber.xaml.cs
+               6 File(s)          9,198 bytes
+
+ Directory of C:\Projects\Working\TDT0325\SupportFiles
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM            65,536 BillWork.db
+03/25/2018  10:39 AM           274,432 BillWork0.db
+03/25/2018  10:39 AM             2,048 BillWorkDBonly.db
+               3 File(s)        342,016 bytes
+
+ Directory of C:\Projects\Working\TDT0325\ViewModel
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM               968 MainViewModel.cs
+03/25/2018  10:39 AM             1,846 ViewModelLocator.cs
+               2 File(s)          2,814 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM    <DIR>          DBProjects
+04/17/2018  07:03 AM    <DIR>          Helpers
+03/25/2018  10:39 AM    <DIR>          Main
+05/04/2018  04:00 PM    <DIR>          Plans
+03/25/2018  10:39 AM    <DIR>          Plans2
+03/25/2018  10:39 AM    <DIR>          Projects
+03/25/2018  04:11 PM    <DIR>          Reports
+06/01/2018  11:02 AM    <DIR>          Shell
+05/29/2018  10:37 AM    <DIR>          ToDos
+04/16/2018  03:47 PM    <DIR>          Tracks
+               0 File(s)              0 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\DBProjects
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM             7,581 DBProjectView - Copy.xaml
+03/25/2018  10:39 AM             9,278 DBProjectView.xaml
+03/25/2018  10:39 AM             1,031 DBProjectView.xaml - Copy.cs
+03/25/2018  10:39 AM             4,882 DBProjectView.xaml.cs
+03/25/2018  10:39 AM               460 DBTypes.cs
+03/25/2018  10:39 AM             4,656 TopViewModel.cs
+03/25/2018  10:39 AM               522 TVItem.cs
+03/25/2018  10:39 AM             4,153 TVItemViewModel.cs
+               8 File(s)         32,563 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Helpers
+
+04/17/2018  07:03 AM    <DIR>          .
+04/17/2018  07:03 AM    <DIR>          ..
+03/25/2018  10:39 AM             1,088 CommandVM.cs
+04/17/2018  07:03 AM            12,144 CrudVMBaseTDT.cs
+03/25/2018  10:39 AM             1,481 ReportVM.cs
+04/16/2018  12:50 PM             9,734 ViewVM.cs
+03/25/2018  10:39 AM            12,949 VisualHelper.cs
+03/25/2018  10:39 AM               932 VMBase.cs
+               6 File(s)         38,328 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Main
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM             1,756 MainViewModel.cs
+03/25/2018  10:39 AM             1,227 MainWindow.xaml
+03/25/2018  10:39 AM               488 MainWindow.xaml.cs
+               3 File(s)          3,471 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Plans
+
+05/04/2018  04:00 PM    <DIR>          .
+05/04/2018  04:00 PM    <DIR>          ..
+04/20/2018  10:33 AM             1,258 ADialog.xaml
+04/20/2018  10:34 AM               761 ADialog.xaml.cs
+04/20/2018  09:00 AM             3,848 ContextAssist.cs
+04/12/2018  03:32 PM             2,206 dbFolderViewModel.cs
+04/13/2018  09:46 AM             3,152 dbProjectViewModel.cs
+04/12/2018  03:32 PM               868 dbSubTaskViewModel.cs
+04/12/2018  03:32 PM             2,946 dbTaskViewModel.cs
+03/25/2018  10:39 AM             1,532 InputDialog.xaml
+03/25/2018  10:39 AM             1,032 InputDialog.xaml.cs
+03/25/2018  10:39 AM             1,678 PlanDetails.cs
+04/14/2018  09:10 AM            38,269 PlansDnD.cs
+03/25/2018  10:39 AM             5,897 PlansTree.cs
+03/26/2018  03:29 PM            28,663 PlansView.xaml
+05/04/2018  04:00 PM            35,202 PlansView.xaml.cs
+04/20/2018  10:37 AM            63,512 PlansViewModel.cs
+03/25/2018  10:39 AM            17,958 PlansVMpartial.cs
+03/25/2018  10:39 AM             1,959 ProjectVM.cs
+04/20/2018  09:00 AM             1,558 ShutDownDialog.xaml
+04/20/2018  08:43 AM             1,053 ShutDownDialog.xaml.cs
+03/31/2018  07:11 AM             5,990 TreeViewItemViewModel.cs
+04/20/2018  09:10 AM            25,835 TVEdits.cs
+              21 File(s)        245,177 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Plans2
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM            27,641 Plans2DnD - Copy.cs
+03/25/2018  10:39 AM            33,591 Plans2DnD.cs
+03/25/2018  10:39 AM            12,009 Plans2View.xaml
+03/25/2018  10:39 AM            28,130 Plans2View.xaml.cs
+03/25/2018  10:39 AM            14,818 Plans2ViewModel - Copy.cs
+03/25/2018  10:39 AM            15,406 Plans2ViewModel.cs
+03/25/2018  10:39 AM            14,783 TV2Edits.cs
+               7 File(s)        146,378 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Projects
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM             3,660 CountryViewModel.cs
+03/25/2018  10:39 AM             1,038 FolderViewModel.cs
+03/25/2018  10:39 AM             1,140 InputDialog.xaml
+03/25/2018  10:39 AM               604 InputDialog.xaml.cs
+03/25/2018  10:39 AM            10,067 ProjectView.xaml
+03/25/2018  10:39 AM             1,246 ProjectView.xaml.cs
+03/25/2018  10:39 AM               855 ProjectViewModel.cs
+03/25/2018  10:39 AM               538 SubTaskViewModel.cs
+03/25/2018  10:39 AM               774 TaskViewModel.cs
+03/25/2018  10:39 AM             6,333 xTreeViewItemViewModel.cs
+              10 File(s)         26,255 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Reports
+
+03/25/2018  04:11 PM    <DIR>          .
+03/25/2018  04:11 PM    <DIR>          ..
+03/25/2018  04:11 PM             3,849 ReportObjects.cs
+03/25/2018  10:39 AM             4,515 ReportsView - Copy.xaml
+03/25/2018  10:39 AM             4,792 ReportsView.xaml
+03/25/2018  10:39 AM             4,728 ReportsView.xaml - Copy.cs
+03/25/2018  10:39 AM             4,390 ReportsView.xaml.cs
+03/25/2018  10:39 AM             9,010 ReportsViewModel.cs
+03/25/2018  10:39 AM            19,101 ReportTracks.rdlc
+03/25/2018  10:39 AM               883 ReportViewer.xaml
+03/25/2018  10:39 AM             2,103 ReportViewer.xaml.cs
+03/25/2018  10:39 AM               542 ShowReport.xaml
+03/25/2018  10:39 AM               625 ShowReport.xaml.cs
+              11 File(s)         54,538 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Shell
+
+06/01/2018  11:02 AM    <DIR>          .
+06/01/2018  11:02 AM    <DIR>          ..
+04/10/2018  09:14 AM             2,230 ShellView.xaml
+06/01/2018  11:02 AM             9,233 ShellView.xaml.cs
+04/23/2018  08:44 AM             1,405 ShellViewModel.cs
+               3 File(s)         12,868 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\ToDos
+
+05/29/2018  10:37 AM    <DIR>          .
+05/29/2018  10:37 AM    <DIR>          ..
+03/25/2018  10:39 AM             4,582 DoneToBackgroundConverter.cs
+05/29/2018  10:37 AM            45,367 ToDosView.xaml
+03/25/2018  10:39 AM             3,906 ToDosView.xaml.cs
+05/07/2018  09:31 AM            58,387 ToDosViewModel.cs
+03/25/2018  10:39 AM             1,319 ToDoVM.cs
+               5 File(s)        113,561 bytes
+
+ Directory of C:\Projects\Working\TDT0325\Views\Tracks
+
+04/16/2018  03:47 PM    <DIR>          .
+04/16/2018  03:47 PM    <DIR>          ..
+03/25/2018  10:39 AM            33,014 TracksView.xaml
+03/25/2018  10:39 AM             1,940 TracksView.xaml.cs
+04/16/2018  03:47 PM            13,963 TracksViewModel.cs
+03/25/2018  10:39 AM               529 TrackVM.cs
+               4 File(s)         49,446 bytes
+
+ Directory of C:\Projects\Working\TDT0325\x64
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM         1,543,168 SQLite.Interop.dll
+               1 File(s)      1,543,168 bytes
+
+ Directory of C:\Projects\Working\TDT0325\x86
+
+03/25/2018  10:39 AM    <DIR>          .
+03/25/2018  10:39 AM    <DIR>          ..
+03/25/2018  10:39 AM         1,209,856 SQLite.Interop.dll
+               1 File(s)      1,209,856 bytes
+
+     Total Files Listed:
+             844 File(s)    168,563,728 bytes
+             857 Dir(s)  670,900,174,848 bytes free

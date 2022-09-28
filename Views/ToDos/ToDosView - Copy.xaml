@@ -1,0 +1,970 @@
+﻿<UserControl x:Class="Planner.ToDosView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        xmlns:e2c="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Platform"
+        xmlns:local="clr-namespace:Planner"
+        xmlns:spt="clr-namespace:Planner"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:dd="clr-namespace:GongSolutions.Wpf.DragDrop;assembly=GongSolutions.Wpf.DragDrop"
+        xmlns:support="clr-namespace:Planner.Support"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" 
+             
+        mc:Ignorable="d"
+        d:DesignHeight="500" d:DesignWidth="800">
+    
+    <UserControl.Resources>
+        
+        <Style x:Key="LabelTextStyle"
+           TargetType="TextBlock">
+            <Setter Property="Margin"
+                Value="12,0" />
+            <Setter Property="FontFamily"
+                Value="Segoe WP" />
+        </Style>
+        <!--<local:ToDos x:Key="ToDos"/>-->
+
+        <local:DoneToBackgroundConverter   x:Key="DoneToBackgroundConverter"/>
+        <local:StatusToFontSizeConverter x:Key="StatusToFontSizeConverter"/>
+
+        <local:QuantityToForegroundConverter x:Key="QuantityToForegroundConverter"/>
+        <local:IsObsoleteToTextDecorationsConverter x:Key="IsObsoleteToTextDecorationsConverter"/>
+
+        <Style x:Key="QuantityStyle" TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="2,0,2,0" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Foreground" 
+              Value="{Binding 
+                RelativeSource={RelativeSource Self}, 
+                Path=Text, 
+                Converter={StaticResource QuantityToForegroundConverter}}" />
+            <!--<Setter Property="TextDecorations" 
+                    Value="{Binding RelativeSource={RelativeSource AncestorType={x:Type DataGridRow}}, 
+                    Path =Item.IsObsolete, 
+                    Converter={StaticResource IsObsoleteToTextDecorationsConverter}}" />-->
+        </Style>
+
+        <Style x:Key="WorkTimeStyle" TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="Margin" Value="2,0,2,0" />
+            <Setter Property="FontWeight" Value="Regular" />
+            <!--<Setter Property="Foreground" 
+              Value="{Binding 
+                RelativeSource={RelativeSource Self}, 
+                Path=Text, 
+                Converter={StaticResource QuantityToForegroundConverter}}" />-->
+            <!--<Setter Property="TextDecorations" 
+                    Value="{Binding RelativeSource={RelativeSource AncestorType={x:Type DataGridRow}}, 
+                    Path =Item.IsObsolete, 
+                    Converter={StaticResource IsObsoleteToTextDecorationsConverter}}" />-->
+        </Style>
+        
+        <DataTemplate x:Key="DragAdorner">
+            <Border Background="Silver"
+              BorderBrush="Gray"
+              BorderThickness="1"
+              CornerRadius="2"
+              Margin="1">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/icon.png"
+                 Width="16"
+                 Margin="0,0,2,0"
+                 VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding}"
+                     Margin="0,0,2,0"
+                     VerticalAlignment="Center" />
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+        
+    </UserControl.Resources>
+
+    <Grid d:IsLocked="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+
+        <!--ItemsSource="{Binding Views}"-->
+        <StackPanel Orientation="Horizontal" d:IsLocked="True">
+
+            <ListView Name="CommandButtons" ItemsSource="{Binding Commands}" BorderBrush="Black" FontSize="12" FontWeight="Bold" 
+                          ScrollViewer.CanContentScroll="False" d:IsLocked="True"
+                          >
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"></StackPanel>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Button Command="{Binding Send}" 
+                                        BorderThickness="0" 
+                                        Margin="0" Padding="0" 
+                                        >
+                            <Path Data="{Binding IconGeometry}" Stretch="Uniform" 
+                                            Style="{StaticResource PathOpacityStyle}"
+                                            Fill="{StaticResource MidDullBrush}" Width="32" Height="32"/>
+                            <Button.ToolTip>
+                                <TextBlock Text="{Binding CommandDisplay}"/>
+                            </Button.ToolTip>
+                        </Button>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <!--<ListViewItem>Content="ToDos Commands" BorderThickness="5" Height="32" Width="100"</ListViewItem>
+            <ListViewItem>Content="Tracks" BorderThickness="0" Height="32" Width="100"</ListViewItem>-->
+            </ListView>
+
+            <ListView Name="ViewButtons" ItemsSource="{Binding Views}" BorderBrush="Transparent" FontSize="12" FontWeight="Bold" 
+                          ScrollViewer.CanContentScroll="False" d:IsLocked="True" 
+                          >
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"></StackPanel>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Button Command="{Binding Navigate}" 
+                                        BorderThickness="0" Height="32" Width="100" 
+                                        Background="{StaticResource LightBrightGradientBrush}"
+                                        Foreground="{StaticResource DarkDullBrush}" >
+                            <TextBlock Text="{Binding ViewDisplay}" TextAlignment="Center" />
+                        </Button>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <!--<Menu Name="ReportMenu"  DataContext="Reports" Margin="20,0,0,0" 
+                  FontSize="12" FontWeight="Bold" IsEnabled="True"
+                  BorderThickness="0" Height="32" Width="100" KeyboardNavigation.TabNavigation="Cycle" >
+                <MenuItem  Header="Report11" Command="{Binding ReportVM.RunReport1}"  IsCheckable="True">
+                </MenuItem>
+            </Menu>-->
+            
+            <!--<Button Command="{Binding RunReport1}" DataContext="Reports"
+                                        BorderThickness="0" Height="32" Width="100" 
+                                        Background="{StaticResource LightBrightGradientBrush}"
+                                        Foreground="{StaticResource DarkDullBrush}" >
+                <TextBlock Text="TestingMenu" TextAlignment="Center" />
+            </Button>-->
+
+            <Menu Name="MainReportMenu" KeyboardNavigation.TabNavigation="Cycle" Margin="20,0,0,0" 
+                  FontSize="12" FontWeight="Bold" IsEnabled="True"
+                  BorderThickness="0" Height="32" Width="100" d:IsLocked="True">
+                <MenuItem Name="Menu0" Header="Reports" d:IsLocked="True" >
+                    <MenuItem Name="Menu01" Header="Tracks"     Command="{Binding Reports[0].RunReport1}"  IsCheckable="True" d:IsLocked="True"/>
+                    <MenuItem Name="Menu02" Header="Projects"   Command="{Binding Reports[0].RunReport2}"  IsCheckable="True" d:IsLocked="True"/>
+                    <MenuItem Name="Menu03" Header="ToDos"      Command="{Binding Reports[0].RunReport3}"  IsCheckable="True" d:IsLocked="True"/>
+                    <MenuItem Name="Menu04" Header="Sum Tracks" Command="{Binding Reports[0].RunReport4}"  IsCheckable="True" d:IsLocked="True"/>
+                </MenuItem>
+                <!--<MenuItem Header="2" Command="{Binding Test}"  IsCheckable="True"/>
+                <MenuItem Header="_Reports" HorizontalContentAlignment="Center" VerticalC rue"/>
+                    <MenuItem Header="Report2" Command="{Binding Path=CloseCommand}" />
+                    <MenuItem Header="Report3" Command="{Binding Path=CloseCommand}" />
+                    <MenuItem Header="Report4" Command="{Binding Path=CloseCommand}" />
+                    <MenuItem Header="Report5" Command="{Binding Path=CloseCommand}" />
+                </MenuItem>-->
+            </Menu>
+
+            <!--<ComboBox Name="reptCombo" Margin="20,0,0,0" Width="100" Height="32" BorderThickness="0"
+                      Background="{StaticResource LightBrightGradientBrush}"
+                       Foreground="{StaticResource DarkDullBrush}"
+                      Loaded="reptCombo_Loaded"
+                      SelectionChanged="reptCombo_SelectionChanged">
+            </ComboBox>-->
+            
+            <!--<ListView Name="ViewButtons" ItemsSource="{Binding Commands}" BorderBrush="Black" FontSize="12" FontWeight="Bold" 
+                          ScrollViewer.CanContentScroll="False"
+                          >
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"></StackPanel>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Button Command="{Binding Send}" 
+                                        BorderThickness="0" 
+                                        Margin="0" Padding="0" 
+                                        >
+                            <Path Data="{Binding IconGeometry}" Stretch="Uniform" 
+                                            Style="{StaticResource PathOpacityStyle}"
+                                            Fill="{StaticResource MidDullBrush}" Width="32" Height="32"/>
+                            <Button.ToolTip>
+                                <TextBlock Text="{Binding CommandDisplay}"/>
+                            </Button.ToolTip>
+                        </Button>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                -->
+            <!--<ListViewItem>Content="ToDos Commands" BorderThickness="5" Height="32" Width="100"</ListViewItem>
+            <ListViewItem>Content="Tracks" BorderThickness="0" Height="32" Width="100"</ListViewItem>-->
+            <!--
+            </ListView>-->
+            
+            <!--Menu DockPanel.Dock="Top" ItemsSource="{Binding Path=(local:MainViewModel.MainMenu)}">-->
+
+            <!--<Menu Name="MainMenu" ItemsSource="{Binding Path=(local:ToDosViewModel.Reports)}">
+                <Menu.ItemContainerStyle>
+                    <Style>
+                        <Setter Property="MenuItem.Header" Value="{Binding Reports[0].ReportDisplay}"/>
+                        -->
+            <!--<Setter Property="MenuItem.ItemsSource" Value="{Binding Path=(contracts:IMenuItem.Items)}"/>
+                        <Setter Property="MenuItem.Icon" Value="{Binding Path=(contracts:IMenuItem.Icon)}"/>
+                        <Setter Property="MenuItem.IsCheckable" Value="{Binding Path=(contracts:IMenuItem.IsCheckable)}"/>
+                        <Setter Property="MenuItem.IsChecked" Value="{Binding Path=(contracts:IMenuItem.IsChecked)}"/>
+                        <Setter Property="MenuItem.Command" Value="{Binding}"/>
+                        <Setter Property="MenuItem.Visibility" Value="{Binding Path=(contracts:IMenuItem.Visible), 
+                Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                        <Setter Property="MenuItem.ToolTip" Value="{Binding Path=(contracts:IMenuItem.ToolTip)}"/>-->
+                        <!--<Style.Triggers>
+                            <DataTrigger Binding="{Binding Path=(contracts:IMenuItem.IsSeparator)}" Value="true">
+                                <Setter Property="MenuItem.Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type MenuItem}">
+                                            <Separator Style="{DynamicResource {x:Static MenuItem.SeparatorStyleKey}}"/>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </DataTrigger>
+                        </Style.Triggers>-->
+            <!--
+                    </Style>
+                </Menu.ItemContainerStyle>
+            </Menu>-->
+
+
+        </StackPanel>
+        
+        <!--<ContentControl x:Name="Holder" Grid.Row="1" BorderBrush="Aquamarine" BorderThickness="5" />-->
+        <DataGrid x:Name="dg"
+                  Grid.Row="1"
+                  AutoGenerateColumns="False"
+                  ItemsSource="{Binding ToDos}"
+                  HeadersVisibility="Column"
+                  SelectedItem="{Binding SelectedToDo, Mode=TwoWay}"
+                  SelectedIndex="{Binding SelectedToDoIndex, Mode=TwoWay}"
+                  SelectionUnit="FullRow"
+                  SelectionMode="Single"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  RowDetailsVisibilityMode="Collapsed"
+                  
+                  dd:DragDrop.IsDragSource="True"
+                  dd:DragDrop.IsDropTarget="True"
+                  dd:DragDrop.UseDefaultDragAdorner="True"
+                  dd:DragDrop.UseDefaultEffectDataTemplate="True"
+                  dd:DragDrop.DragHandler="{Binding}"
+                  dd:DragDrop.DropHandler="{Binding}"
+
+                  IsReadOnly="True" d:IsHidden="True" d:IsLocked="True"
+                  >
+            <!--local:VisualHelper.EnableRowsMove="True"-->
+
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow" >
+                    <!--<Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Path=Item.TheEntity.Done, Converter={StaticResource DoneToBackgroundConverter}}" />-->
+                    <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Path=Item.TheEntity, Converter={StaticResource DoneToBackgroundConverter}}" />
+                    <Setter Property="FontSize"   Value="{Binding RelativeSource={RelativeSource Self}, Path=Item.TheEntity.Status, Converter={StaticResource StatusToFontSizeConverter}}" />
+                    <!--<Setter Property="FontSize" Value="18" />-->
+                </Style>
+            </DataGrid.RowStyle>
+            <!--<DataGrid.RowDetailsVisibilityMode="RowDetaisVisibilityMode.Collapsed"   />--> 
+            <DataGrid.Columns>
+                <!--<DataGridCheckBoxColumn Binding="{Binding TheEntity.Done, Mode=TwoWay}"  Header="DoneX"  TextBlock.Foreground="Aquamarine" />-->
+
+                <!--, UpdateSourceTrigger=PropertyChanged  https://stackoverflow.com/questions/3833536/how-to-perform-single-click-checkbox-selection-in-wpf-datagrid?rq=1-->
+                <DataGridTemplateColumn MinWidth="30" Header="Done" d:IsLocked="True">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <CheckBox IsChecked="{Binding Path=TheEntity.Done, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Checked="DoneChecked" Unchecked="DoneUnchecked"   VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Grid>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Binding="{Binding TheEntity.Priority, Mode=TwoWay}"  ElementStyle="{StaticResource QuantityStyle}" Header="Priority" d:IsLocked="True" />
+                <DataGridTextColumn Binding="{Binding TheEntity.Item, Mode=TwoWay}"  Header="Item" d:IsLocked="True" />
+                <DataGridTextColumn Binding="{Binding TheEntity.DetailedDesc, Mode=TwoWay}"  Header="Desc" Width="120" d:IsLocked="True"/>
+                <DataGridTextColumn Binding="{Binding TheEntity.Status, Mode=TwoWay}" Header="Status" ElementStyle="{StaticResource QuantityStyle}" d:IsLocked="True" />
+                <DataGridTextColumn Binding="{Binding TheEntity.ElapsedTime, Mode=TwoWay}"  Header="Elapsed Time" d:IsLocked="True" />
+                <DataGridTextColumn Binding="{Binding TheEntity.RevDueDate, StringFormat=MMM dd yyyy, Mode=TwoWay}"  Header="DueDate" d:IsLocked="True" />
+                <DataGridTextColumn Binding="{Binding TheEntity.TDTSortOrder, Mode=TwoWay}"  Header="SortOrder" d:IsLocked="True" />
+                <DataGridTextColumn Binding="{Binding TheEntity.DueDate, StringFormat=dd MMM yyyy, Mode=TwoWay}"  Header="OrigDueDate" d:IsLocked="True" />
+
+                <!--<DataGridTextColumn Binding="{Binding TheEntity.StartDate, Mode=TwoWay}"  Header="StartDate" />-->
+                <DataGridTextColumn Binding="{Binding TheEntity.StartDate, StringFormat=h:mm tt, Mode=TwoWay}"  Header="Start Time" d:IsLocked="True" />
+                <DataGridTextColumn Binding="{Binding TheEntity.DoneDate, StringFormat=yyyy-MM-d HH:mm tt, Mode=TwoWay}"  Header="DoneDate" d:IsLocked="True" />
+                <DataGridCheckBoxColumn Binding="{Binding TheEntity.Hide, Mode=TwoWay}"  Header="Hide" d:IsLocked="True" />
+
+                <!--<DataGridTextColumn Binding="{Binding TheEntity.RespPerson, Mode=TwoWay}"  Header="RespPerson" />
+                <DataGridTextColumn Binding="{Binding TheEntity.DispLevel, Mode=TwoWay}"  Header="Lvel" />
+
+                <DataGridTextColumn Binding="{Binding TheEntity.ToDoID, Mode=TwoWay}"  Header="ToDoID" />
+                <DataGridTextColumn Binding="{Binding TheEntity.ProjectID, Mode=TwoWay}"  Header="ProjectID" />
+                <DataGridTextColumn Binding="{Binding TheEntity.Project, Mode=TwoWay}"  Header="Project" />-->
+
+            </DataGrid.Columns>
+                
+            <DataGrid.InputBindings>
+                <KeyBinding Command="{Binding StartTiming}" Key="F5" />
+            </DataGrid.InputBindings>
+
+            <DataGrid.RowDetailsTemplate>
+                <DataTemplate>
+                        <TextBlock Text="{Binding TheEntity.RespPerson}" Margin="10" />
+                </DataTemplate>
+            </DataGrid.RowDetailsTemplate>
+
+        </DataGrid>
+
+        <ContentControl Template="{StaticResource EditPopUp}" d:IsHidden="True" d:IsLocked="True">
+
+            <ScrollViewer  VerticalScrollBarVisibility="Auto" d:IsHidden="True" d:IsLocked="True">
+                <ItemsControl d:IsLocked="True">
+                    <TextBlock Text="{Binding TitlePopUp}"
+                       Margin="10,10,10,10" HorizontalAlignment="Left" Height="30"
+                       FontStyle="Normal" FontWeight="Bold" FontSize="16" d:IsLocked="True"/>
+
+                    <spt:EditRow LabelFor="Item:" d:IsLocked="True">
+                        <TextBox Text="{Binding  EditVM.TheEntity.Item, 
+                            UpdateSourceTrigger=PropertyChanged,  
+                            NotifyOnSourceUpdated=True,
+                            NotifyOnValidationError=True,
+                            Mode=TwoWay}" d:IsLocked="True"   />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="Desc:" d:IsLocked="True" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.DetailedDesc, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" 
+                                 TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" HorizontalScrollBarVisibility="Auto" d:IsLocked="True">
+
+                        </TextBox>
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="Status:" d:IsLocked="True" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.Status, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" d:IsLocked="True" />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="Priority:" d:IsLocked="True" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.Priority, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" d:IsLocked="True" />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="Elapsed Time:" d:IsLocked="True" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.ElapsedTime, StringFormat=F2, 
+                                        UpdateSourceTrigger=LostFocus,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" d:IsLocked="True" />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="DueDate:" d:IsLocked="True" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.RevDueDate, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" d:IsLocked="True" />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="StartDate:" d:IsLocked="True" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.StartDate, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" d:IsLocked="True" />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="OrigDueDate:" d:IsLocked="True" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.DueDate, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" d:IsLocked="True" />
+                    </spt:EditRow>
+
+                    <!--<spt:EditRow LabelFor="DoneDate:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.DoneDate, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        TargetNullValue='',
+                                        Mode=TwoWay}" />
+                    </spt:EditRow>-->
+
+                    <!--<spt:EditRow LabelFor="RespPerson:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.RespPerson, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" />
+                    </spt:EditRow>-->
+
+                    <!--<spt:EditRow LabelFor="Hide:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.Hide, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" />
+                    </spt:EditRow>-->
+
+                    <!--<spt:EditRow LabelFor="DispLevel:" >
+                        <TextBox 
+                            x:Name="DispLevel"
+                            Text="{Binding   EditVM.TheEntity.DispLevel, 
+                            StringFormat={}{0:C0}, 
+                            UpdateSourceTrigger=PropertyChanged,  
+                            NotifyOnSourceUpdated=True,
+                            NotifyOnValidationError=True,
+                            Mode=TwoWay}" />
+                    </spt:EditRow>-->
+
+                    <spt:EditRow LabelFor="Done:" d:IsLocked="True" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.Done, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" d:IsLocked="True" />
+                    </spt:EditRow>
+
+                    <!--<spt:EditRow LabelFor="TDTSortOrder:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.TDTSortOrder, 
+                                                    UpdateSourceTrigger=PropertyChanged, 
+                                                    NotifyOnSourceUpdated=True,
+                                                    NotifyOnValidationError=True,
+                                                    Mode=TwoWay}" />
+                    </spt:EditRow>-->
+
+                    <!--<spt:EditRow LabelFor="ProjectID:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.ProjectID, 
+                                                    UpdateSourceTrigger=PropertyChanged, 
+                                                    NotifyOnSourceUpdated=True,
+                                                    NotifyOnValidationError=True,
+                                                    Mode=TwoWay}"  />
+                    </spt:EditRow>-->
+
+                    <!--<spt:EditRow LabelFor="ToDoID:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.ToDoID, 
+                                UpdateSourceTrigger=PropertyChanged,  
+                                NotifyOnSourceUpdated=True,
+                                NotifyOnValidationError=True,
+                                Mode=TwoWay}"  />
+                    </spt:EditRow>-->
+
+                    <!--<spt:EditRow LabelFor="TDTSortOrder:">
+                        <TextBox Text="{Binding  EditVM.TheEntity.TDTSortOrder, 
+                                                    UpdateSourceTrigger=PropertyChanged,
+                                                    NotifyOnSourceUpdated=True,
+                                                    NotifyOnValidationError=True,
+                                                    Mode=TwoWay}"  />
+                    </spt:EditRow>-->
+
+                    -->
+                    <!--<spt:EditRow LabelFor="Outstanding Amount:">
+                        -->
+                    <!-- Outstanding payments are calculated rather than entered -->
+                    <!--
+                        <TextBox Text="{Binding   EditVM.TheEntity.Outstanding, 
+                                StringFormat={}{0:C0}}"  />
+                    </spt:EditRow>-->
+                </ItemsControl>
+            </ScrollViewer>
+
+        </ContentControl>
+        <!--Text="Do you want to start work on this item?"-->
+        <ContentControl Template="{StaticResource StartTimingPopUp}" d:IsHidden="True" d:IsLocked="True">
+            <StackPanel Grid.Row="0"
+                    Margin="12,17,0,10" d:IsLocked="True">
+
+                <TextBlock Text="{Binding TitlePopUp}"
+                       Margin="10,10,10,10" HorizontalAlignment="Left" Height="30"
+                       FontStyle="Normal" FontWeight="Bold" FontSize="16" d:IsLocked="True"/>
+
+                <TextBlock Text="{Binding TitlePopUp1}"
+                       Margin="10,10,10,10" HorizontalAlignment="Left" Height="30"
+                       FontStyle="Normal" FontWeight="Bold" FontSize="16" d:IsLocked="True"/>
+
+                <TextBlock Text="Update Item name and description if desired."
+                       Margin="9,-7,0,0" FontSize="12" FontWeight="Normal" HorizontalAlignment="Center" Height="20"
+                       Style="{StaticResource LabelTextStyle}" d:IsLocked="True" />
+
+                <Grid Margin="3,3,3,3" d:IsLocked="True">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="120"></ColumnDefinition>
+                        <ColumnDefinition Width="220"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center" d:IsLocked="True">Item:</Label>
+                    <TextBox Grid.Row="0" Margin="0,7,20.667,7" Text="{Binding EditVM.TheEntity.Item}" 
+                           HorizontalContentAlignment="Left" Height="Auto"  VerticalAlignment="Center" HorizontalAlignment="Right" Width="198" Grid.Column="1" d:IsLocked="True"/>
+
+                    <Label Grid.Row="1" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center" d:IsLocked="True">Detailed Description:</Label>
+                    <TextBox Grid.Row="1" Grid.Column="1" Margin="3" Height="100" Text="{Binding EditVM.TheEntity.DetailedDesc}"
+                           TextWrapping="WrapWithOverflow" VerticalAlignment="Center" d:IsLocked="True"></TextBox>
+
+
+                    <Label Grid.Row="2" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center" d:IsLocked="True">Start Date:</Label>
+                    <xctk:DateTimePicker Name="dtpStart" Grid.Row="2" Grid.Column="1" Margin="0" Width="220" HorizontalContentAlignment="Left" 
+                                         ValueChanged="dtpStart_ValueChanged" 
+                           Height="Auto"  VerticalAlignment="Center"  Value="{Binding EditVM.TheEntity.StartDate}" d:IsLocked="True"></xctk:DateTimePicker>
+
+                    <!--<Label Grid.Row="3" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Top" Content="Work Item Status:"/>-->
+
+                    <!--<StackPanel Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Width="110" Margin="0,20,0,0" >
+                        <RadioButton Content="Finished"   IsChecked="{Binding StatusOpt, Converter={StaticResource EnumToBoolConverter}, ConverterParameter=F}" ToolTip="Finished" />
+                        <RadioButton Content="Continuing" IsChecked="{Binding StatusOpt, Converter={StaticResource EnumToBoolConverter}, ConverterParameter=C}" ToolTip="Continuing or Recurring" />
+                    </StackPanel>-->
+
+                    <!--<Label Grid.Row="3" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center">Start Time:</Label>
+                    <xctk:TimePicker Grid.Row="3" Grid.Column="1" Margin="3" Width="110" HorizontalContentAlignment="Left"
+                           Height="Auto"  VerticalAlignment="Center" HorizontalAlignment="Left" Value="{Binding EditVM.TheEntity.StartDate}"></xctk:TimePicker>-->
+
+                    <!--<Label Grid.Row="4" Grid.Column="0" Margin="3"
+             HorizontalContentAlignment="Right" VerticalAlignment="Center">Home:</Label>
+                    <TextBox Grid.Row="4" Grid.Column="1" Margin="3"
+             Height="Auto"  VerticalAlignment="Center"></TextBox>-->
+
+                </Grid>
+            </StackPanel>
+
+            <!--<Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0"
+                    Margin="12,17,0,28">
+
+                    <TextBlock Text="Do you want to start work on this item?" 
+                       Margin="10,10,10,10"
+                       FontStyle="Italic" FontWeight="Bold" FontSize="16"/>
+
+                    <TextBlock Text="Update Item name and description if desired."
+                       Margin="9,-7,0,0" FontSize="22" FontWeight="Bold"
+                       Style="{StaticResource LabelTextStyle}" />
+
+
+                    <StackPanel FlowDirection="LeftToRight" HorizontalAlignment="">
+                    
+                    <TextBlock Text="Item:"
+                       Style="{StaticResource LabelTextStyle}" />
+
+                    <TextBox x:Name="FirstNameTextBox2" 
+                     Text="{Binding SelectedFriend.FirstName, Mode=TwoWay}"/>
+                </StackPanel>
+                <TextBlock Text="Item:"
+                       Style="{StaticResource LabelTextStyle}" />
+
+                    <TextBox x:Name="FirstNameTextBox3" 
+                     Text="{Binding SelectedFriend.FirstName, Mode=TwoWay}"/>
+                </StackPanel>
+
+
+                <StackPanel x:Name="ContentPanel"
+                    Margin="12,0,12,0"
+                    Grid.Row="1">
+                    <TextBlock Text="First Name"
+                       Style="{StaticResource LabelTextStyle}" />
+
+                    <TextBox x:Name="FirstNameTextBox" 
+                     Text="{Binding SelectedFriend.FirstName, Mode=TwoWay}"/>
+
+                    <TextBlock Text="Last Name"
+                       Style="{StaticResource LabelTextStyle}" />
+
+                    <TextBox x:Name="LastNameTextBox" 
+                     Text="{Binding SelectedFriend.LastName, Mode=TwoWay}"/>
+
+                    <TextBlock Text="Preview"
+                       Style="{StaticResource LabelTextStyle}" />
+
+                    <StackPanel Margin="12,12,12,0"
+                        Orientation="Horizontal">
+                        <TextBlock Text="{Binding SelectedFriend.FirstName}" />
+                        <TextBlock Text=" " />
+                        <TextBlock Text="{Binding SelectedFriend.LastName}" />
+                    </StackPanel>
+
+                    <Button Content="save"  FontSize="18" FontWeight="Bold"
+                HorizontalAlignment="Center" Width="100" Height="30" Margin="10,10,10,10"/>
+
+                </StackPanel>
+            </Grid>-->
+
+            <!--<ScrollViewer  VerticalScrollBarVisibility="Auto">
+                <ItemsControl>
+                    <TextBlock Text="Start Timing" FontSize="18"/>
+
+                    <spt:EditRow LabelFor="ToDoID:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.ToDoID, 
+                                UpdateSourceTrigger=PropertyChanged,  
+                                NotifyOnSourceUpdated=True,
+                                NotifyOnValidationError=True,
+                                Mode=TwoWay}"  />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="ProjectID:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.ProjectID, 
+                                                    UpdateSourceTrigger=PropertyChanged, 
+                                                    NotifyOnSourceUpdated=True,
+                                                    NotifyOnValidationError=True,
+                                                    Mode=TwoWay}"  />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="TDTSortOrder:">
+                        <TextBox Text="{Binding  EditVM.TheEntity.TDTSortOrder, 
+                                                    UpdateSourceTrigger=PropertyChanged,
+                                                    NotifyOnSourceUpdated=True,
+                                                    NotifyOnValidationError=True,
+                                                    Mode=TwoWay}"  />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="Project:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.Project, 
+                                                    UpdateSourceTrigger=PropertyChanged, 
+                                                    NotifyOnSourceUpdated=True,
+                                                    NotifyOnValidationError=True,
+                                                    Mode=TwoWay}"  />
+                    </spt:EditRow>
+                    <spt:EditRow LabelFor="Item:">
+                        <TextBox Text="{Binding  EditVM.TheEntity.Item, 
+                            UpdateSourceTrigger=PropertyChanged,  
+                            NotifyOnSourceUpdated=True,
+                            NotifyOnValidationError=True,
+                            Mode=TwoWay}"   />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="Desc:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.DetailedDesc, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="StartDate:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.StartDate, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="DueDate:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.DueDate, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="RevDueDate:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.RevDueDate, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="DoneDate:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.DoneDate, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="RespPerson:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.RespPerson, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="DispLevel:" >
+                        <TextBox 
+                            
+                            Text="{Binding   EditVM.TheEntity.DispLevel, 
+                            StringFormat={}{0:C0}, 
+                            UpdateSourceTrigger=PropertyChanged,  
+                            NotifyOnSourceUpdated=True,
+                            NotifyOnValidationError=True,
+                            Mode=TwoWay}" />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="Done:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.Done, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" />
+                    </spt:EditRow>
+
+                    <spt:EditRow LabelFor="Hide:" >
+                        <TextBox Text="{Binding  EditVM.TheEntity.Hide, 
+                                        UpdateSourceTrigger=PropertyChanged,  
+                                        NotifyOnSourceUpdated=True,
+                                        NotifyOnValidationError=True,
+                                        Mode=TwoWay}" />
+                    </spt:EditRow>
+
+                    
+                    -->
+            <!--<spt:EditRow LabelFor="Outstanding Amount:">
+                        -->
+            <!-- Outstanding payments are calculated rather than entered -->
+            <!--
+                        <TextBox Text="{Binding   EditVM.TheEntity.Outstanding, 
+                                StringFormat={}{0:C0}}"  />
+                    </spt:EditRow>-->
+            <!--
+                </ItemsControl>
+            </ScrollViewer>-->
+
+        </ContentControl>
+
+        <ContentControl Template="{StaticResource StopWorkPopUp}" d:IsHidden="True" d:IsLocked="True">
+            <StackPanel Grid.Row="0"
+                    Margin="12,5,0,10" d:IsLocked="True">
+
+                <TextBlock Text="{Binding TitlePopUp}"
+                       Margin="10,5,10,10" HorizontalAlignment="Left" Height="30"
+                       FontStyle="Normal" FontWeight="Bold" FontSize="16" d:IsLocked="True"/>
+
+                <TextBlock Text="{Binding TitlePopUp1}"
+                       Margin="10,5,10,10" HorizontalAlignment="Left" Height="30"
+                       FontStyle="Normal" FontWeight="Bold" FontSize="16" d:IsLocked="True"/>
+
+                <TextBlock Text="Update Item name and description if desired."
+                       Margin="9,-7,0,0" FontSize="12" FontWeight="Normal" HorizontalAlignment="Center" Height="20"
+                       Style="{StaticResource LabelTextStyle}" d:IsLocked="True" />
+
+                <Grid Margin="3,3,3,3" d:IsLocked="True">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="120"></ColumnDefinition>
+                        <ColumnDefinition Width="220"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center" d:IsLocked="True">Item:</Label>
+                    <TextBox Grid.Row="0" Margin="0,7,20.667,7" Text="{Binding EditVM.TheEntity.Item}" 
+                           HorizontalContentAlignment="Left" Height="Auto"  VerticalAlignment="Center" HorizontalAlignment="Right" Width="198" Grid.Column="1" d:IsLocked="True"/>
+
+                    <Label Grid.Row="1" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center" d:IsLocked="True">Detailed Description:</Label>
+                    <TextBox Grid.Row="1" Grid.Column="1" Margin="3" Height="70" Text="{Binding EditVM.TheEntity.DetailedDesc}"
+                           TextWrapping="WrapWithOverflow" VerticalAlignment="Center" d:IsLocked="True"></TextBox>
+
+                    <Label Grid.Row="2" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center" d:IsLocked="True">Done Date:</Label>
+                    <xctk:DateTimePicker Name="dtpStop" Grid.Row="2" Grid.Column="1" Margin="0" Width="220" HorizontalContentAlignment="Left" 
+                                         ValueChanged="dtpStart_ValueChanged" 
+                           Height="Auto"  VerticalAlignment="Center"  Value="{Binding EditVM.TheEntity.DoneDate}" d:IsLocked="True"></xctk:DateTimePicker>
+
+                    <Label Grid.Row="3" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Top" Content="Work Item Status:" d:IsLocked="True"/>
+
+                    <StackPanel Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Width="130" Margin="0,20,0,0" d:IsLocked="True" >
+                        <RadioButton Content="Finished (F)"         IsChecked="{Binding StatusOpt, Converter={StaticResource EnumToBoolConverter}, ConverterParameter=F}" ToolTip="Finished" d:IsLocked="True" />
+                        <RadioButton Content="Interrupted (I)"      IsChecked="{Binding StatusOpt, Converter={StaticResource EnumToBoolConverter}, ConverterParameter=I}" ToolTip="Interrupted, hope to return" d:IsLocked="True" />
+                        <RadioButton Content="Partial Complete (W)" IsChecked="{Binding StatusOpt, Converter={StaticResource EnumToBoolConverter}, ConverterParameter=W}" ToolTip="Partially finished, done for today" d:IsLocked="True" />
+                        <!--<RadioButton Content="Continuing" IsChecked="{Binding StatusOpt, Converter={StaticResource EnumToBoolConverter}, ConverterParameter=C}" ToolTip="Continuing or Recurring" />-->
+                    </StackPanel>
+
+                    <!--<Label Grid.Row="3" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center">Start Time:</Label>
+                    <xctk:TimePicker Grid.Row="3" Grid.Column="1" Margin="3" Width="110" HorizontalContentAlignment="Left"
+                           Height="Auto"  VerticalAlignment="Center" HorizontalAlignment="Left" Value="{Binding EditVM.TheEntity.StartDate}"></xctk:TimePicker>-->
+
+                    <!--<Label Grid.Row="4" Grid.Column="0" Margin="3"
+             HorizontalContentAlignment="Right" VerticalAlignment="Center">Home:</Label>
+                    <TextBox Grid.Row="4" Grid.Column="1" Margin="3"
+             Height="Auto"  VerticalAlignment="Center"></TextBox>-->
+
+                    <!--<TextBlock Text="StopWork"  HorizontalAlignment="Left" VerticalAlignment="Top"/>-->
+
+                </Grid>
+            </StackPanel>
+
+        </ContentControl>
+
+        <ContentControl Template="{StaticResource StopStartWorkPopUp}" d:IsHidden="True">
+            <StackPanel Grid.Row="0"
+                    Margin="12,5,0,10">
+
+                <TextBlock Text="{Binding TitlePopUp}" 
+                       Margin="10,5,10,10" HorizontalAlignment="Left" Height="30"
+                       FontStyle="Normal" FontWeight="Bold" FontSize="16"/>
+
+                <TextBlock Text="Update Item name and description if desired."
+                       Margin="9,-7,0,0" FontSize="12" FontWeight="Normal" HorizontalAlignment="Center" Height="20"
+                       Style="{StaticResource LabelTextStyle}" />
+
+                <Grid Margin="3,3,3,3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="120"></ColumnDefinition>
+                        <ColumnDefinition Width="220"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center">ToDo:</Label>
+                    <TextBox Grid.Row="0" Margin="0,7,20.667,7" Text="{Binding InWorkToDo.TheEntity.Item, Mode=TwoWay}" 
+                           HorizontalContentAlignment="Left" Height="Auto"  VerticalAlignment="Center" HorizontalAlignment="Right" Width="198" Grid.Column="1"/>
+
+                    <Label Grid.Row="1" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center">Details:</Label>
+                    <TextBox Grid.Row="1" Grid.Column="1" Margin="3" Height="40" Text="{Binding InWorkToDo.TheEntity.DetailedDesc, Mode=TwoWay}"
+                           TextWrapping="WrapWithOverflow" VerticalAlignment="Center"></TextBox>
+
+                    <Label Grid.Row="2" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center">Finish Time:</Label>
+                    <xctk:DateTimePicker Name="dtpStopStart" Grid.Row="2" Grid.Column="1" Margin="0" Width="220" HorizontalContentAlignment="Left" 
+                                         ValueChanged="dtpStart_ValueChanged" 
+                           Height="Auto"  VerticalAlignment="Center"  Value="{Binding InWorkToDo.TheEntity.DoneDate}"></xctk:DateTimePicker>
+
+                    <!--<Label Grid.Row="2" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center">Done Date:</Label>
+                    <xctk:DateTimePicker Name="dtpStop2" Grid.Row="2" Grid.Column="1" Margin="0" Width="220" HorizontalContentAlignment="Left" 
+                                         ValueChanged="dtpStart_ValueChanged" 
+                           Height="Auto"  VerticalAlignment="Center"  Value="{Binding EditVM.TheEntity.DoneDate}"></xctk:DateTimePicker>-->
+
+                    <Label Grid.Row="3" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Top" Content="ToDo Finish Status:"/>
+
+                    <StackPanel Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Width="110" Margin="0,20,0,0" >
+                        <RadioButton Content="Finished"   IsChecked="{Binding StatusOpt, Converter={StaticResource EnumToBoolConverter}, ConverterParameter=F}" ToolTip="Finished" />
+                        <RadioButton Content="Interrupted" IsChecked="{Binding StatusOpt, Converter={StaticResource EnumToBoolConverter}, ConverterParameter=I}" ToolTip="Interrupted, hope to return" />
+                        <RadioButton Content="Unfinished" IsChecked="{Binding StatusOpt, Converter={StaticResource EnumToBoolConverter}, ConverterParameter=O}" ToolTip="Not finished, get it tomorrow" />
+                        <RadioButton Content="Continuing" IsChecked="{Binding StatusOpt, Converter={StaticResource EnumToBoolConverter}, ConverterParameter=C}" ToolTip="Continuing or Recurring" />
+                    </StackPanel>
+
+                    <!--<Label Grid.Row="3" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center">Start Time:</Label>
+                    <xctk:TimePicker Grid.Row="3" Grid.Column="1" Margin="3" Width="110" HorizontalContentAlignment="Left"
+                           Height="Auto"  VerticalAlignment="Center" HorizontalAlignment="Left" Value="{Binding EditVM.TheEntity.StartDate}"></xctk:TimePicker>-->
+
+                    <!--<Label Grid.Row="4" Grid.Column="0" Margin="3"
+             HorizontalContentAlignment="Right" VerticalAlignment="Center">Home:</Label>
+                    <TextBox Grid.Row="4" Grid.Column="1" Margin="3"
+             Height="Auto"  VerticalAlignment="Center"></TextBox>-->
+
+                    <!--<TextBlock Text="StopWork"  HorizontalAlignment="Left" VerticalAlignment="Top"/>-->
+
+                </Grid>
+
+                <TextBlock Text="{Binding TitlePopUp1}"
+                       Margin="10,5,10,10" HorizontalAlignment="Left" Height="30"
+                           FontStyle="Normal" FontWeight="Bold" FontSize="16"/>
+
+                <Grid Margin="3,3,3,3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="120"></ColumnDefinition>
+                        <ColumnDefinition Width="220"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center">ToDo:</Label>
+                    <TextBox Grid.Row="0" Margin="0,7,20.667,7" Text="{Binding NextToDo.TheEntity.Item}" 
+                           HorizontalContentAlignment="Left" Height="Auto"  VerticalAlignment="Center" HorizontalAlignment="Right" Width="198" Grid.Column="1"/>
+
+                    <Label Grid.Row="1" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center">Details:</Label>
+                    <TextBox Grid.Row="1" Grid.Column="1" Margin="3" Height="30" Text="{Binding NextToDo.TheEntity.DetailedDesc}"
+                           TextWrapping="WrapWithOverflow" VerticalAlignment="Center"></TextBox>
+
+                    <!--<Label Grid.Row="2" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center">Done Date:</Label>
+                    <xctk:DateTimePicker Name="dtpStopStart2" Grid.Row="2" Grid.Column="1" Margin="0" Width="220" HorizontalContentAlignment="Left" 
+                                         ValueChanged="dtpStart_ValueChanged" 
+                           Height="Auto"  VerticalAlignment="Center"  Value="{Binding EditVM.TheEntity.DoneDate}"></xctk:DateTimePicker>-->
+
+                    <!--<Label Grid.Row="3" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Top" Content="Work Item Status:"/>
+
+                    <StackPanel Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Width="110" Margin="0,20,0,0" >
+                        <RadioButton Content="Finished"   IsChecked="{Binding StatusOpt, Converter={StaticResource EnumToBoolConverter}, ConverterParameter=F}" ToolTip="Finished" />
+                        <RadioButton Content="Interrupted" IsChecked="{Binding StatusOpt, Converter={StaticResource EnumToBoolConverter}, ConverterParameter=I}" ToolTip="Interrupted, hope to return" />
+                        <RadioButton Content="Unfinished" IsChecked="{Binding StatusOpt, Converter={StaticResource EnumToBoolConverter}, ConverterParameter=O}" ToolTip="Not finished, get it tomorrow" />
+                        <RadioButton Content="Continuing" IsChecked="{Binding StatusOpt, Converter={StaticResource EnumToBoolConverter}, ConverterParameter=C}" ToolTip="Continuing or Recurring" />
+                    </StackPanel>-->
+
+                    <!--<Label Grid.Row="3" Grid.Column="0" Margin="3" Width="120"
+                           HorizontalContentAlignment="Right" VerticalAlignment="Center">Start Time:</Label>
+                    <xctk:TimePicker Grid.Row="3" Grid.Column="1" Margin="3" Width="110" HorizontalContentAlignment="Left"
+                           Height="Auto"  VerticalAlignment="Center" HorizontalAlignment="Left" Value="{Binding EditVM.TheEntity.StartDate}"></xctk:TimePicker>-->
+
+                    <!--<Label Grid.Row="4" Grid.Column="0" Margin="3"
+             HorizontalContentAlignment="Right" VerticalAlignment="Center">Home:</Label>
+                    <TextBox Grid.Row="4" Grid.Column="1" Margin="3"
+             Height="Auto"  VerticalAlignment="Center"></TextBox>-->
+
+                    <!--<TextBlock Text="StopWork"  HorizontalAlignment="Left" VerticalAlignment="Top"/>-->
+
+                </Grid>
+
+
+            </StackPanel>
+
+        </ContentControl>
+        
+        <support:Throbber x:Name="Throbber" Visibility="{Binding ThrobberVisible}" d:IsHidden="True" d:IsLocked="True"/>
+
+        <TextBlock Text="{Binding ErrorMessage}"  HorizontalAlignment="Right" VerticalAlignment="Top" d:IsHidden="True" d:IsLocked="True"/>
+
+    </Grid>
+</UserControl>
